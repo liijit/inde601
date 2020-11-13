@@ -1,0 +1,9 @@
+h3 {
+    font-size: 18px;
+    font-family: Arial;
+    margin: 10px;
+    text-transform: uppercase;
+  }
+  input {margin: 0 10px;}
+  
+  #time, #date { display: none; }
