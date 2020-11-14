@@ -31,8 +31,9 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "start": "tsc && nodemon -r dotenv/config src/app.ts && nodemon --watch 'src/**'",
-    "dev": "tsnd --respawn src/app.ts --watch src/*.ts",
+    "start": "",
+    "dev": "tsc && nodemon -r dotenv/config src/app.ts && nodemon --watch 'src/**'",
+    "dev-typescript-w": "tsnd --respawn src/app.ts --watch src/*.ts",
     "prod": "tsc && node ts-pile/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
