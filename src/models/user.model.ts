@@ -1,29 +1,18 @@
-import { Schema } from 'mongoose'
+import { Schema, Model } from 'mongoose'
+import { prop, Typegoose, ModelType, InstanceType } from 'typegoose';
 
-const Schemas = Schema{
-	username: {
-	  type: String,
-	  required: true,
-	  trim: true,
-	  minlength: 3,
-	},
-	email: {
-	  type: String,
-	  required: true,
-	  trim: true,
-	},
-	password: {
-	  type: String,
-	  required: true,
-	  minlength: 6
-	},
-	nhsid: {
-		type: String,
-		required: true,
-		minlength: 12
-	}
-},
+class User extends Typegoose {
+	@prop({ required: true })
+	username?: string;
 
-{
-	timestamps: true,
-});
+	@prop({ required: true, trim: true })
+	email?: string;
+
+	@prop({ required: true, minlength: 8 })
+	password?: string;
+
+	@prop({ required: true, minlength: 12, maxlength: 12 });
+	nhsid?: string;
+}
+
+module.exports = new User().getModelForClass(User);
