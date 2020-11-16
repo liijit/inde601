@@ -21,6 +21,8 @@
      }});
     
 
+     $('.datepicker').pickadate()
+
     //  $('#calendar').fullCalendar({
     //     dayClick: function(date, jsEvent, view) {
     //         // $('.timepicker').pickatime()
