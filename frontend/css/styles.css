@@ -1,0 +1,35 @@
+h3 {
+    font-size: 18px;
+    font-family: Arial;
+    margin: 10px;
+    text-transform: uppercase;
+  }
+  input {margin: 0 10px;}
+  
+  #time, #date { display: none; }
+
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mt
+{
+margin-top: 250px;
+}
+
+.main-bg 
+{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../assets/main-bg.png');
+  width: 300px;
+  height: 650px;
+  justify-content: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  border-radius: 20px;
+}
