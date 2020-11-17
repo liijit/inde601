@@ -1,3 +1,5 @@
+
+
 h3 {
     font-size: 18px;
     font-family: Arial;
@@ -15,9 +17,25 @@ h3 {
   justify-content: center;
 }
 
+.img-overlay:hover {
+
+  opacity: 0.8;
+}
+
 .mt
 {
-margin-top: 250px;
+margin-top: 40px;
+}
+
+
+.heading-text
+{
+  margin-top: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
 }
 
 .main-bg 
@@ -29,7 +47,41 @@ margin-top: 250px;
   width: 300px;
   height: 650px;
   justify-content: center;
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  border-radius: 20px;
+  background-repeat: repeat-y; 
+  background-size: cover; 
+  border-radius: 10px;
 }
+
+.touch-cursor {
+  cursor: url('../assets/touch-cursor.png'), auto;
+}
+
+<<<<<<< HEAD
+.picker {
+  display:flex;
+ 
+}
+=======
+.calendar
+{
+margin-top: 100px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+padding-top: 15px;
+height: 500px;
+width: 250px;
+background-color: #A17E8D;
+border-radius: 20px;
+font-size: 1em;
+font-family: 'Trebuchet MS';
+color: white;
+
+
+}.picker {
+  display:flex;
+ 
+}
+
+
+>>>>>>> 35b167016f7a7225cc964b3fd204dd602a0e59d0
