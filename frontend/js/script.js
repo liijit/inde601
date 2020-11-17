@@ -1,25 +1,46 @@
+//initialising calendar
 
-
-// // $('.myButton').pickadate()
-// // $(function (){ 
-// //     $('.myButton').pickadate();
-// // })
-// // $('.myButton').pickatime()
-
-
-// moment().format("MMM Do YY");
-  $(document).ready(function() {
-    // page is now ready, initialize the calendar...
-    $('#calendar').fullCalendar({
-      weekends: true
-    });
-  });
+ var timeDropDown;
   $('#calendar').fullCalendar({
+    firstDay: 1, //setting first day to monday instead of default 0, sunday
     dayClick: function(date, jsEvent, view) {
         // $('.timepicker').pickatime()
-        alert("Selected Date:"+date._d)
+        //when you click on the day, it will display 
+      alert("Selected Date:"+date._d)
+    //   timeDropDown();
      }});
+
+
+     new Picker(document.querySelector('.js-time-picker'), {
+        format: 'HH:mm',
+        headers: true,
+        text: {
+          title: 'Pick a time',
+        },
+      });
     
+// (function($) {
+//     $(function() {
+//         $('input.timepicker').timepicker();
+//         console.log(timepicker);
+//     });
+// });
+  
+    //  function timeDropDown(){
+    //      //select times in here
+
+    //  }
+    // $(document).ready(function(){
+    //     $('input.timepicker').timepicker({});
+    // });
+
+
+
+
+
+
+
+
 
     //  $('#calendar').fullCalendar({
     //     dayClick: function(date, jsEvent, view) {
