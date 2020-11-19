@@ -3,6 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 
 import { stringEncryption } from './authentication/crypto';
+import { Verify } from './authentication/verify'
 
 const app: express.Application = express();
 
@@ -15,6 +16,12 @@ app.get('/', (req, res) => {
 app.use(express.json());
 app.use(cors());
 
+const user = require('./routes/user')
+const admin = require('./routes/admin')
+
+app.use('/', user)
+app.use('/', admin)
+
 app.listen(process.env.PORT, () => {
     console.log(`Listening @ ${process.env.PORT}`);
     let a = new stringEncryption;
@@ -23,5 +30,18 @@ app.listen(process.env.PORT, () => {
     console.log(e.iv+' '+ e.data)
     let decryptedData = a.decrypt(e);
     console.log(decryptedData)
-    // console.log(process.env.ALGORITHM,process.env.IV, process.env.EKEY)
+    const foo = new Verify(2423423,'jit43000@gmail.com')
+    foo.emailCheck().catch((e) => {
+    	console.log(e)
+    })
 })
+
+mongoose.connect(uri!, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true },
+    (err) => {
+        if (err) {
+            throw err.message
+            process.exit(1);
+        }
+        console.log("MongoDB database connection established successfully");
+    }
+);

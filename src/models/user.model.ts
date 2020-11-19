@@ -2,17 +2,17 @@ import { Schema, Model } from 'mongoose'
 import { prop, Typegoose, ModelType, InstanceType } from 'typegoose';
 
 class User extends Typegoose {
-	@prop({ required: true })
+	@prop({ required: false })
 	username?: string;
 
-	@prop({ required: true, trim: true })
+	@prop({ required: false, trim: true })
 	email?: string;
 
-	@prop({ required: true, minlength: 8 })
+	@prop({ required: false, minlength: 8 })
 	password?: string;
 
-	@prop({ required: true, minlength: 12, maxlength: 12 });
+	@prop({ required: false, minlength: 1, maxlength: 12 })
 	nhsid?: string;
 }
 
-module.exports = new User().getModelForClass(User);
+export const userSchema = new User().getModelForClass(User);
