@@ -1,13 +1,15 @@
-import { Router } from 'express';
-import bcrypt from 'bcrypt';
-import validator from 'validator'
+import { Router, Request, Response } from 'express';
+import { Verify } from '../authentication/verify'
 
-import { User } from '../models/user.model';
+import { InhsPost } from '../interfaces'
 
-class verify {
-	constructor(){}
+// import * as jsonD from '../db/nhsTemp.json'
 
-	nhsStringCheck(e){
-		000-000-0001
-	}
-}
+const route = Router();
+
+route.get("/register", (req: Request, res: Response) => {
+	const data: InhsPost = req.body;
+	res.send(data)
+})
+
+module.exports = route;
