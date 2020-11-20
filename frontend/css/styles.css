@@ -47,11 +47,6 @@ margin-top: 40px;
   width: 300px;
   height: 650px;
   justify-content: center;
-<<<<<<< HEAD
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  border-radius: 20px;
-=======
   background-repeat: repeat-y; 
   background-size: cover; 
   border-radius: 10px;
@@ -59,7 +54,6 @@ margin-top: 40px;
 
 .touch-cursor {
   cursor: url('../assets/touch-cursor.png'), auto;
->>>>>>> f43b81b3f48df081c0a7946753a599aaad426c0f
 }
 
 .calendar
@@ -80,7 +74,7 @@ color: white;
 
 }.picker {
   display:flex;
- 
+
 }
 
 
