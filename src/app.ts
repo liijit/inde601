@@ -30,7 +30,7 @@ app.listen(process.env.PORT, () => {
     console.log(e.iv+' '+ e.data)
     let decryptedData = a.decrypt(e);
     console.log(decryptedData)
-    const foo = new Verify(2423423,'jit43000@gmail.com')
+    const foo = new Verify("2423423",'jit43000@gmail.com')
     foo.emailCheck().catch((e) => {
     	console.log(e)
     })

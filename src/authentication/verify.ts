@@ -2,15 +2,15 @@ import bcrypt from "bcrypt";
 import isEmail from "validator/lib/isEmail";
 import isNumeric from "validator/lib/isNumeric";
 
-import { InhsCheck, IVerify } from "../interfaces";
+import { IVerify } from "../interfaces";
 
 import { userSchema } from "../models/user.model";
 
 export class Verify implements IVerify {
-	nhsNo: number;
+	nhsNo: string;
 	email: string;
 
-	constructor(nhsNo: number, email: string) {
+	constructor(nhsNo: string, email: string) {
 		this.nhsNo = nhsNo;
 		this.email = email;
 	}
@@ -20,7 +20,7 @@ export class Verify implements IVerify {
 			if (isNumeric(this.nhsNo) === true) {
 				resolve(true)
 			} else {
-				reject({ msg: "Incorrect number" });
+				reject({ msg: "Number isn't numeric" });
 			}
 		});
 	}

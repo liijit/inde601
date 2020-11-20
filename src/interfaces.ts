@@ -1,5 +1,5 @@
 export interface IVerify {
-	nhsNo: number;
+	nhsNo: string;
 	email: string;
 }
 
@@ -8,5 +8,5 @@ export interface InhsCheck {
 }
 
 export interface InhsPost {
-	nhsNo: number;
+	nhsid: string;
 }

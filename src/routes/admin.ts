@@ -5,13 +5,13 @@ import { InhsPost } from '../interfaces'
 
 import { nhsCreationSchema } from '../models/admin.model'
 
-// import * as jsonD from '../db/nhsTemp.json'
-
 const route = Router();
 
 route.post("/admin/add/nhs", (req: Request, res: Response) => {
 	const data: InhsPost = req.body
-	let account = new nhsCreationSchema ({ nhsNo: data });
+	let account = new nhsCreationSchema ({ nhsid: data.nhsid });
+	console.log(data)
+	console.log(account)
 	account.save()
 		.then(() => res.json({ msg: 'Nhs No. Registered'}))
 		.catch(err => console.log(err))

@@ -10,9 +10,6 @@ class User extends Typegoose {
 
 	@prop({ required: false, minlength: 8 })
 	password?: string;
-
-	@prop({ required: false, minlength: 1, maxlength: 12 })
-	nhsid?: string;
 }
 
 export const userSchema = new User().getModelForClass(User);
