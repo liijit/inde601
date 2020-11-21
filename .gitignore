@@ -3,3 +3,4 @@ dist
 ts-pile
 package-lock.json
 .env
+.DS_Store
