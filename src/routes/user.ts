@@ -1,13 +1,14 @@
 import { Router, Request, Response } from 'express';
-import { Verify } from '../authentication/verify'
-import { passwordEncrypt } from '../authentication/crypto'
+import { Account, Verify, Register } from '../authentication/account'
 
-import { InhsPost } from '../interfaces'
+import { Iregister } from '../interfaces'
 
 const route = Router();
 
-route.get("/register", (req: Request, res: Response) => {
-	const data: InhsPost = req.body;
+route.post("/register", (req: Request, res: Response) => {
+	const data: Iregister = req.body;
+	const Acc = new Register('jit43000@gmail.com',"1234")
+	console.log(Acc.emailCheck())
 	res.send(data)
 })
 

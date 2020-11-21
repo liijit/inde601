@@ -3,7 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 
 import { stringEncrypt } from './authentication/crypto';
-import { Verify } from './authentication/verify'
+import { Verify } from './authentication/account'
 
 const app: express.Application = express();
 

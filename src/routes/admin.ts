@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import { Verify } from '../authentication/verify'
+import { Verify } from '../authentication/account'
 
 import { InhsPost } from '../interfaces'
 

@@ -6,18 +6,20 @@ import { IVerify } from "../interfaces";
 
 import { userSchema } from "../models/user.model";
 
-export class Verify implements IVerify {
-	nhsNo: string;
+export class Account implements IVerify {
 	email: string;
+	password: string;
 
-	constructor(nhsNo: string, email: string) {
-		this.nhsNo = nhsNo;
+	constructor(email: string, password: string) {
 		this.email = email;
+		this.password = password;
 	}
+}
 
-	nhsCheck() {
+export class Verify extends Account implements IVerify {
+	nhsCheck = (e: string) => {
 		return new Promise((resolve, reject) => {
-			if (isNumeric(this.nhsNo) === true) {
+			if (isNumeric(e) === true) {
 				resolve(true)
 			} else {
 				reject({ msg: "Number isn't numeric" });
@@ -25,7 +27,7 @@ export class Verify implements IVerify {
 		});
 	}
 
-	emailCheck() {
+	emailCheck = () => {
 		return new Promise((resolve, reject) => {
 			if(isEmail(this.email) === true) {
 				resolve(true)
@@ -37,6 +39,13 @@ export class Verify implements IVerify {
 		}
 }
 
-export class Register {
-	constructor() {}
+export class Register extends Verify implements IVerify {
+	passwordHash = () => {
+		const salt: any = bcrypt.genSalt(10, function (err, salt){
+			return salt;
+		})
+		return (bcrypt.hash(this.password, salt).then((res) => {
+			return res;
+		}));
+	};
 }

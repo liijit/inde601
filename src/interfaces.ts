@@ -1,6 +1,6 @@
 export interface IVerify {
-	nhsNo: string;
 	email: string;
+	password: string;
 }
 
 export interface InhsCheck {

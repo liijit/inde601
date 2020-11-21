@@ -29,19 +29,3 @@ export class stringEncrypt {
 		return decrypted.toString();
 	};
 }
-
-export class passwordEncrypt implements IBcrypt{
-	salt: string;
-
-	constructor(salt: string) {
-		this.salt = salt;
-	}
-
-	passwordHash = (e: string) => {
-	//generate a salt and hash the plain password
-	const salt = bcrypt.genSalt();
-	return (bcrypt.hash(e, this.salt).then((res) => {
-		return res;
-	}));
-};
-}
