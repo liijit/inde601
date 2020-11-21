@@ -10,3 +10,13 @@ export interface InhsCheck {
 export interface InhsPost {
 	nhsid: string;
 }
+
+export interface IBcrypt {
+	salt: string;
+}
+
+export interface Iregister {
+	username: string;
+	email: string;
+	password: string;
+}

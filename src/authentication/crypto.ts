@@ -1,10 +1,13 @@
 import * as crypto from "crypto";
+import bcrypt from "bcrypt";
+
+import { IBcrypt } from "../interfaces"
 
 interface Config {
 	iv: string, data: any
 }
 
-export class stringEncryption {
+export class stringEncrypt {
 	algorithm = process.env.ALGORITHM!;
 	sKey = process.env.EKEY!;
 	iv = crypto.randomBytes(16)!;
@@ -25,4 +28,20 @@ export class stringEncryption {
 		const decrypted = Buffer.concat([decipher.update(Buffer.from(e.data, "hex"))]);
 		return decrypted.toString();
 	};
+}
+
+export class passwordEncrypt implements IBcrypt{
+	salt: string;
+
+	constructor(salt: string) {
+		this.salt = salt;
+	}
+
+	passwordHash = (e: string) => {
+	//generate a salt and hash the plain password
+	const salt = bcrypt.genSalt();
+	return (bcrypt.hash(e, this.salt).then((res) => {
+		return res;
+	}));
+};
 }

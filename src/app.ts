@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 
-import { stringEncryption } from './authentication/crypto';
+import { stringEncrypt } from './authentication/crypto';
 import { Verify } from './authentication/verify'
 
 const app: express.Application = express();
@@ -24,7 +24,7 @@ app.use('/', admin)
 
 app.listen(process.env.PORT, () => {
     console.log(`Listening @ ${process.env.PORT}`);
-    let a = new stringEncryption;
+    let a = new stringEncrypt;
     let e = a.encrypt('aaf')
 
     console.log(e.iv+' '+ e.data)

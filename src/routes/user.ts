@@ -1,9 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { Verify } from '../authentication/verify'
+import { passwordEncrypt } from '../authentication/crypto'
 
 import { InhsPost } from '../interfaces'
-
-// import * as jsonD from '../db/nhsTemp.json'
 
 const route = Router();
 
