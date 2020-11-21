@@ -154,8 +154,8 @@ img {max-width: 100%;}
   
   #chatContainer,#messageHistory{
     padding: 40px;
-    align-content: center!important;
-    align-items: center!important;
+    /* align-content: center!important; */
+    /* align-items: center!important; */
   }
   #therapistMsg{
     overflow:hidden; 
@@ -165,7 +165,7 @@ img {max-width: 100%;}
     display: inline-block;
     padding: 10px;
     vertical-align: top;
-    width: 92%;
+    width: 50%;
   }
   #userMsg{
     overflow:hidden; 
@@ -175,9 +175,11 @@ img {max-width: 100%;}
     background: #2980B9;
     display: inline-block;
     padding: 10px;
-    overflow:hidden; 
-    margin:26px 0 26px;
+    /* overflow:hidden; 
+    margin:26px 0 26px; */
     display: inline-block;
+    vertical-align: top;
+    width: 50%;
   }
   #therapistText{
     
