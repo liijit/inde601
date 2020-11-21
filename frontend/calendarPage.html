@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/wickedpicker.css">
         <title>Shift - Menu</title>
     </head>
     <body>
@@ -17,7 +18,10 @@
         <div class="container touch-cursor">
             <div class="row">
             <div class="main-bg">
-                
+                <div class="picker">
+                    <input type="text" class="timepicker" >
+                    <input type="button" placeHolder="Add Time" text="Add Time">
+                  </div>
                 <div id="calendar" class="calendar"></div>
             
                 </div>
@@ -35,6 +39,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js"></script>
 <script src="library/picker.js"></script>
 <script src="library/picker.date.js"></script>
+<script src="js/wickedpicker.js"></script>
 
 <script src="library/picker.time.js"></script>
 <script src="../frontend/js/script.js"></script>

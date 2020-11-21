@@ -1,10 +1,13 @@
 import * as crypto from "crypto";
+import bcrypt from "bcrypt";
+
+import { IBcrypt } from "../interfaces"
 
 interface Config {
 	iv: string, data: any
 }
 
-export class stringEncryption {
+export class stringEncrypt {
 	algorithm = process.env.ALGORITHM!;
 	sKey = process.env.EKEY!;
 	iv = crypto.randomBytes(16)!;

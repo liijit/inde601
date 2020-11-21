@@ -1,13 +1,15 @@
-import { Router } from 'express';
-import bcrypt from 'bcrypt';
-import validator from 'validator'
+import { Router, Request, Response } from 'express';
+import { Account, Verify, Register } from '../authentication/account'
 
-import { User } from '../models/user.model';
+import { Iregister } from '../interfaces'
 
-class verify {
-	constructor(){}
+const route = Router();
 
-	nhsStringCheck(e){
-		000-000-0001
-	}
-}
+route.post("/register", (req: Request, res: Response) => {
+	const data: Iregister = req.body;
+	const Acc = new Register('jit43000@gmail.com',"1234")
+	console.log(Acc.emailCheck())
+	res.send(data)
+})
+
+module.exports = route;
