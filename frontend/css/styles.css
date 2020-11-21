@@ -56,12 +56,6 @@ margin-top: 40px;
   cursor: url('../assets/touch-cursor.png'), auto;
 }
 
-<<<<<<< HEAD
-.picker {
-  display:flex;
- 
-}
-=======
 .calendar
 {
 margin-top: 100px;
@@ -84,4 +78,122 @@ color: white;
 }
 
 
->>>>>>> 35b167016f7a7225cc964b3fd204dd602a0e59d0
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+body {
+  font-family: sans-serif !important;
+}
+
+img {max-width: 100%;}
+        .inbox_msg {
+          border: 1px solid #c4c4c4;
+          clear: both;
+          overflow: hidden;
+          padding: 20px;
+        }
+        .top_spac{ margin: 20px 0 0;}
+
+
+        .recent_heading {float: left; width:40%;}
+
+        .headind_srch{ padding:10px 29px 10px 20px; overflow:hidden; border-bottom:1px solid #c4c4c4;}
+
+        .recent_heading h4 {
+          color: #F6CC5D;
+          font-size: 21px;
+          margin: auto;
+        }
+
+   
+  #therapistName{
+    width: 100%;
+    text-align: center;
+  }
+  
+  #chatContainer,#messageHistory{
+    padding: 40px;
+    align-content: center!important;
+    align-items: center!important;
+  }
+  #therapistMsg{
+    overflow:hidden; 
+    margin:26px 0 26px;
+    float: left;
+    background: #F6CC5D;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    width: 92%;
+  }
+  #userMsg{
+    overflow:hidden; 
+    margin:26px 0 26px;
+    /* width: max-content; */
+    float: right;
+    background: #2980B9;
+    display: inline-block;
+    padding: 10px;
+    overflow:hidden; 
+    margin:26px 0 26px;
+    display: inline-block;
+  }
+  #therapistText{
+    
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
+
+  }
+  #userText{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
+  }
