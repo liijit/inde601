@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept" rel="stylesheet" type="text/css"/>
     
     <link rel="stylesheet" href="css/styles.css">
    
@@ -17,46 +17,76 @@
    
 
     
-        <h1 id="therapistName">*THERAPIST NAME</h1>
+        <h1 id="responseName">*response NAME</h1>
+        <div class="row">
+        <div class="col-2"></div>
         
-        <div class="container" id="chatContainer">
+        <div class="container col-8" id="chatContainer">
           <div class = "container"id="messageHistory">
             
            
            
-            <div class="container"id="therapistMsg">
-              <p id="therapistText">TESTING 123</p>
+            <div class="container"id="responseMsg">
+              <div id = "innerContainerTher">
+              <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
+            </div>
             </div>
           
-          <div class="row"></div>
+          
             
-            <div  class="container"id="userMsg">
-                <p id="userText">ey up</p>
-              </div>
-              <div class="row"></div>
-              <div class="container"id="therapistMsg">
-                  <p id="therapistText">TESTING 123</p>
+            <div class="container"id="userMsg">
+                <div id = "innerContainerUser">
+                <p id="userText">hi angela am addicted to drugs and i dont know what to do so can you help me out pls </p>
                 </div>
+              </div>
+              
+              <div class="container"id="responseMsg">
+                <div id = "innerContainerTher">
+                <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
+              </div>
+              </div>
                  
-          <div class="row"></div>
+         
             
-          <div  class="container"id="userMsg">
-              <p id="userText">ey up</p>
+          <div class="container"id="userMsg">
+            <div id = "innerContainerUser">
+            <p id="userText">hi angela am addicted to drugs and i dont know what to do so can you help me out pls </p>
             </div>
-                <div class="row"></div>
-                <div class="container"id="therapistMsg">
-                    <p id="therapistText">TESTING 123</p>
-                  </div>
+          </div>
+              
+                <div class="container"id="responseMsg">
+                  <div id = "innerContainerTher">
+                  <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
+                </div>
+                </div>
                   
             </div>
           </div>
+        
+          <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+        <div class="container col-8"id="typeMessageContainer">
+            
           
+          
+            <!-- <div class="container" id="messageBoxContainer"> -->
+         <textarea id="typeMessageBox"placeholder="Type Message..."></textarea>
+              <input type="submit"id="sendMessageToOther"value="Send">
+        <!-- </div> -->
+        
+        </div>
+        <div class="col-2"></div>
+        </div>
           
 </body>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js"></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -65,6 +95,4 @@
   <script src="library/picker.date.js"></script>
   <script src="library/picker.time.js"></script>
   <script src="../frontend/js/script.js"></script>
-
-<script src="../frontend/js/script.js"></script>
 </html>

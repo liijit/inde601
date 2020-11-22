@@ -147,55 +147,101 @@ img {max-width: 100%;}
         }
 
    
-  #therapistName{
+  #responseName{
     width: 100%;
     text-align: center;
   }
   
   #chatContainer,#messageHistory{
     padding: 40px;
+    background: #000;
+    background: rgba(247,205,96,0.4); /* correct */
+    color: #000;
+    
     /* align-content: center!important; */
     /* align-items: center!important; */
   }
-  #therapistMsg{
+  #responseMsg{
     overflow:hidden; 
     margin:26px 0 26px;
-    float: left;
-    background: #F6CC5D;
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px;
     vertical-align: top;
-    width: 50%;
+    width: 100%;
   }
   #userMsg{
     overflow:hidden; 
     margin:26px 0 26px;
-    /* width: max-content; */
-    float: right;
-    background: #2980B9;
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px;
     /* overflow:hidden; 
     margin:26px 0 26px; */
-    display: inline-block;
+    /* display: inline-block; */
     vertical-align: top;
-    width: 50%;
+    width: 100%;
   }
-  #therapistText{
+
+  #innerContainerUser{
+    background: #2980B9;
+    border-radius: 4px;
+    float: right;
+  }
+  #innerContainerTher{
+    background: #F6CC5D;
+    border-radius: 4px;
+    float: left;
+  }
+  #responseText{
     
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
-    color: #4c4c4c;
+    color: #F5F5F5;
     font-size: 15px;
     min-height: 48px;
     width: 100%;
+    font-family: acumin-pro, sans-serif;
+font-style: normal;
+font-weight: 100;
+max-width: 30ch;
 
   }
   #userText{
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
-    color: #4c4c4c;
+    color: #F5F5F5;
     font-size: 15px;
     min-height: 48px;
     width: 100%;
+    font-family: acumin-pro, sans-serif;
+font-style: normal;
+font-weight: 100;
+max-width: 30ch;
   }
+
+  #innerContainer{
+    width: 60%;
+    height: auto;
+    margin: 0;
+    padding: 5px;
+  }
+
+  #typeMessageContainer{
+    width: 100%;
+    padding: 40px;
+    text-align: left;
+  }
+  #messageBoxContainer{
+    width: 100%;
+  }
+ #typeMessageBox{
+      height:10vh;
+     width: 80%;
+     text-align: left;
+  
+ }
+ #sendMessageToOther{
+   width:20%;
+   position: absolute;
+ }
+
+ 
