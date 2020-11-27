@@ -33,6 +33,7 @@
     "tsc": "tsc",
     "start": "",
     "dev": "tsc && nodemon -r dotenv/config src/app.ts && nodemon --watch 'src/**'",
+    "html": "browser-sync start --server --files '*.html, css/*.css'",
     "dev-typescript-w": "tsnd --respawn src/app.ts --watch src/*.ts",
     "prod": "tsc && node ts-pile/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
