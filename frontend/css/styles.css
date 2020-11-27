@@ -10,6 +10,13 @@ h3 {
   
   #time, #date { display: none; }
 
+.mt-5
+{
+
+  margin-top: 100px !important;
+
+}
+
 
 .img {
   display: flex;
@@ -58,13 +65,13 @@ margin-top: 40px;
 
 .calendar
 {
-margin-top: 100px;
+margin-top: 50px;
 margin-left: auto;
 margin-right: auto;
 padding: 10px;
 padding-top: 15px;
 height: 500px;
-width: 250px;
+width: 500px;
 background-color: #A17E8D;
 border-radius: 20px;
 font-size: 1em;
@@ -147,116 +154,137 @@ img {max-width: 100%;}
         }
 
    
-  #responseName{
+  #therapistName{
     width: 100%;
     text-align: center;
   }
   
-  #chatContainer{
-    padding: 10px;
-    /* background: #000; */
-    background: rgba(247,205,96,0.2); /* correct */
-    /* color: #000; */
-    
-    /* align-content: center!important; */
-    /* align-items: center!important; */
+  #chatContainer,#messageHistory{
+    padding: 40px;
+    align-content: center!important;
+    align-items: center!important;
   }
-  #responseMsg{
+  #therapistMsg{
     overflow:hidden; 
     margin:26px 0 26px;
-    /* display: inline-block; */
-    /* padding: 10px; */
+    float: left;
+    background: #F6CC5D;
+    display: inline-block;
+    padding: 10px;
     vertical-align: top;
-    width: 100%;
+    width: 92%;
   }
   #userMsg{
     overflow:hidden; 
     margin:26px 0 26px;
-    /* display: inline-block; */
-    padding: 10px;
-    /* overflow:hidden; 
-    margin:26px 0 26px; */
-    /* display: inline-block; */
-    vertical-align: top;
-    width: 100%;
-  }
-
-  #innerContainerUser{
-    background: #90B0C6;
-    border-radius: 4px;
+    /* width: max-content; */
     float: right;
-    max-width:50%;
+    background: #2980B9;
+    display: inline-block;
+    padding: 10px;
+    overflow:hidden; 
+    margin:26px 0 26px;
+    display: inline-block;
   }
-  #innerContainerTher{
-    background: #F6CC5D;
-    border-radius: 4px;
-    float: left;
-    max-width: 50%;
-  }
-  #responseText{
+  #therapistText{
     
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
-    color: #F5F5F5;
-    font-size: 1vw;
+    color: #4c4c4c;
+    font-size: 15px;
     min-height: 48px;
     width: 100%;
-    font-family: acumin-pro, sans-serif;
-font-style: normal;
-font-weight: 100;
-max-width: 50ch;
-
 
   }
   #userText{
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
-    color: #F5F5F5;
-    font-size: 1vw;
+    color: #4c4c4c;
+    font-size: 15px;
     min-height: 48px;
     width: 100%;
-    font-family: acumin-pro, sans-serif;
-font-style: normal;
-font-weight: 100;
-max-width: 50ch;
   }
 
-  #innerContainer{
-    width: 60%;
-    height: auto;
-    margin: 0;
-    padding: 5px;
-  }
 
-  #typeMessageContainer{
-    width: 100%;
-    padding: 10px 0px 10px 0px;
-    text-align: left;
-  }
-  #messageBoxContainer{
-    width: 100%;
-  }
- #typeMessageBox{
-      height:5vh;
-     width: 80%;
-     text-align: left;
-  
- }
- #sendMessageToOther{
-   width:20%;
-   position: absolute;
-   margin: 0;
- }
 
- @media screen and (min-width: 320px) {
-  #userText, #responseText{
-    font-size: 3vw;
-  }
+  .fc-unthemed td.fc-today {
+    background-color: #E55934 !important;
+    border: oldlace;
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (min-width: 768px) {
-  #userText, #responseText {
-    font-size: 1vw;
-  }
+.date-title
+{
+  margin-top: 100px !important;
+  display: flex;
+  justify-content: center;
+  color: #A17E8D;
+}
+
+
+.main-heading
+{
+ margin-top: 80px;
+ display: flex;
+ justify-content: center;
+ color: #A17E8D;
+ font-size: 2em;
+}
+
+
+#nhsNumber
+{
+ 
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-left: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 50px;
+  
+
+}
+
+.green-btn
+{
+
+  
+  margin-top: 10px;
+  padding: 5px;
+  width: 50px;
+  background-color: #7EA292;
+  color: white;
+  border: 0px;
+  border-radius: 20px;
+  font-size: 1em;
+
+}
+
+.green-btn:hover 
+{
+
+  background-color: rgb(126, 162, 146,0.8);
+  text-decoration: none;
+}
+
+#email
+{
+  padding-left: 10px;
+  border-radius: 10px;
+
+}
+
+#username
+{
+  padding-left: 10px;
+  border-radius: 10px;
+
+}
+
+#password
+{
+  padding-left: 10px;
+  border-radius: 10px;
 }
