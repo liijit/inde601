@@ -361,119 +361,7 @@ img {max-width: 100%;}
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
-@ -152,11 +152,11 @@ img {max-width: 100%;}
-    text-align: center;
-  }
-  
-  #chatContainer,#messageHistory{
-    padding: 40px;
-    background: #000;
-    background: rgba(247,205,96,0.4); /* correct */
-    color: #000;
-  #chatContainer{
-    padding: 10px;
-    /* background: #000; */
-    background: rgba(247,205,96,0.2); /* correct */
-    /* color: #000; */
-    
-    /* align-content: center!important; */
-    /* align-items: center!important; */
-@ -165,7 +165,7 @@ img {max-width: 100%;}
-    overflow:hidden; 
-    margin:26px 0 26px;
-    /* display: inline-block; */
-    padding: 10px;
-    /* padding: 10px; */
-    vertical-align: top;
-    width: 100%;
-  }
-@ -182,40 +182,43 @@ img {max-width: 100%;}
-  }
 
-  #innerContainerUser{
-    background: #2980B9;
-    background: #90B0C6;
-    border-radius: 4px;
-    float: right;
-    max-width:50%;
-  }
-  #innerContainerTher{
-    background: #F6CC5D;
-    border-radius: 4px;
-    float: left;
-    max-width: 50%;
-  }
-  #responseText{
-    
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: medium none;
-    color: #F5F5F5;
-    font-size: 15px;
-    font-size: 1vw;
-    min-height: 48px;
-    width: 100%;
-    font-family: acumin-pro, sans-serif;
-font-style: normal;
-font-weight: 100;
-max-width: 30ch;
-max-width: 50ch;
-
-
-  }
-  #userText{
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: medium none;
-    color: #F5F5F5;
-    font-size: 15px;
-    font-size: 1vw;
-    min-height: 48px;
-    width: 100%;
-    font-family: acumin-pro, sans-serif;
-font-style: normal;
-font-weight: 100;
-max-width: 30ch;
-max-width: 50ch;
-  }
-
-  #innerContainer{
-@ -227,14 +230,14 @@ max-width: 30ch;
-
-  #typeMessageContainer{
-    width: 100%;
-    padding: 40px;
-    padding: 10px 0px 10px 0px;
-    text-align: left;
-  }
-  #messageBoxContainer{
-    width: 100%;
-  }
- #typeMessageBox{
-      height:10vh;
-      height:5vh;
-     width: 80%;
-     text-align: left;
-  
-@ -242,6 +245,18 @@ max-width: 30ch;
- #sendMessageToOther{
-   width:20%;
-   position: absolute;
-   margin: 0;
- }
-
- 
- @media screen and (min-width: 320px) {
-  #userText, #responseText{
-    font-size: 3vw;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (min-width: 768px) {
-  #userText, #responseText {
-    font-size: 1vw;
-  }
-=======
 .hero-image{
   background-image: url("/frontend/assets/background.png");
   /* position: absolute;
@@ -485,4 +373,4 @@ max-width: 50ch;
   background-size: cover;
   position: relative;
 }
->>>>>>> 4b5ca982d8df9320b2e7fa1a00d0a9f25c34a6c6
+
