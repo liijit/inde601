@@ -24,7 +24,6 @@
       document.getElementById("myDropdown").classList.toggle("show");
     }
     
-<<<<<<< HEAD
     // Close the dropdown menu if the user clicks outside of it
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
@@ -38,7 +37,6 @@
         }
       }
     }
-=======
 // (function($) {
 //     $(function() {
 //         $('input.timepicker').timepicker();
@@ -133,4 +131,4 @@ $(".timepicker").wickedpicker({
 
 var timepickers = $('.timepicker').wickedpicker(); 
 console.log(timepickers.wickedpicker('time', 1)); //JS console: time of timepicker-two
->>>>>>> e05295a9ea1cb75d10f68aaefd150ad05b219095
+
