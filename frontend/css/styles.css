@@ -69,7 +69,6 @@ margin-top: 40px;
 {
  
  padding: 40px;
- display: inline;
  justify-content: center;
  color: white;
  ;
@@ -78,8 +77,11 @@ margin-top: 40px;
 
 .yellow-bg
 {
-  
-  margin-top: 180px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  justify-content: center;
   background-color: rgba(247,205,96,0.8);
   border-radius: 20px;
   width: 550px;
@@ -113,7 +115,7 @@ color: white;
 }
 
 .fc-unthemed td.fc-today {
-  background-color:  #90B0C6 !important;
+  background-color:  #90b0c644 !important;
   border: 1px;
 
 }
@@ -135,9 +137,6 @@ color: white;
   border-width: 0.5px;
   border-color: #4d3b43;
 }
-
-
-
 
 
 .dropbtn {

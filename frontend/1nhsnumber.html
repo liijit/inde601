@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/frontend/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Home Page</title>
 </head>
-<body>
-        <img id="myBackgroundImage"src="assets/background.png">
-    <h1>Welcome! Enter your 12 digit NHS Number to get started</h1>
-    <div class="container">
+<body class="main-bg">
+
+
+    <div class="container text-center">
+        <div class="main-heading yellow-bg">
+    <h2>Welcome!<br>Enter your 12 digit NHS Number to get started</h2>
+    
         <!--NEED A validateNHS FORM-->
         <form action="/validateNHS"method ="POST">
             
           
           <input type="text" id="nhsNumber" name="nhsNumber" placeholder="NHS Number">
       <!--Needs to submit to the database-->
-          <a href="createaccount.html"><input type="submit" value="Go"></a> <!--BUTTON NEEDS TO LINK TO createaccount PAGE-->
-        </form>
+          <!-- <a href="createaccount.html"><button class="Go-Btn" type="submit" value="Go"></a> BUTTON NEEDS TO LINK TO createaccount PAGE -->
+            <a href="createaccount.html"><input type="submit" class="green-btn btn-info" value="Go"></a>
+        </form> 
+  </div>
+  </div>
+
+  
+        
+
 </body>
-<script src="../pickadate.js/lib/picker.date.js"></script>
-<script src="../pickadate.js/lib/picker.js"></script>
-<script src="../pickadate.js/lib/picker.time.js"></script>
+
 <script src="/js/script.js"></script>
 </html>
