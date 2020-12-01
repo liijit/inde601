@@ -1,22 +1,27 @@
 export interface IVerify {
-	email: string;
-	password: string;
+  email: string;
+  password: string;
 }
 
 export interface InhsCheck {
-	no: number;
+  no: number;
 }
 
 export interface InhsPost {
-	nhsid: string;
+  nhsid: string;
 }
 
 export interface IBcrypt {
-	salt: string;
+  salt: string;
 }
 
 export interface Iregister {
-	username: string;
-	email: string;
-	password: string;
+  name: string;
+  email: string;
+  password: string;
+}
+
+export interface ISchedule {
+  date: Date;
+  account: string;
 }
