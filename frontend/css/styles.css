@@ -1,32 +1,32 @@
 
 
 h3 {
-    font-size: 18px;
-    font-family: Arial;
-    margin: 10px;
-    text-transform: uppercase;
-  }
-  input {margin: 0 10px;}
-  
-  #time, #date { display: none; }
+  font-size: 18px;
+  font-family: Arial;
+  margin: 10px;
+  text-transform: uppercase;
+}
+input {margin: 0 10px;}
+
+#time, #date { display: none; }
 
 .mt-5
 {
 
-  margin-top: 100px !important;
+margin-top: 100px !important;
 
 }
 
 
 .img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .img-overlay:hover {
 
-  opacity: 0.8;
+opacity: 0.8;
 }
 
 .mt
@@ -37,31 +37,31 @@ margin-top: 40px;
 
 .heading-text
 {
-  margin-top: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  color: whitesmoke;
+margin-top: 180px;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+justify-content: center;
+color: whitesmoke;
 }
 
 .main-bg 
 {
-  /* margin-top: 50px; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  background-image: url('../assets/background.png');
-  background-size: cover;
-  /* width: 300px;
-  height: 650px; */
-  /* justify-content: center;
-  background-repeat: repeat-y; 
-  background-size: cover; 
-  border-radius: 10px; */
+/* margin-top: 50px; */
+/* margin-left: auto;
+margin-right: auto; */
+background-image: url('../assets/background.png');
+background-size: cover;
+/* width: 300px;
+height: 650px; */
+/* justify-content: center;
+background-repeat: repeat-y; 
+background-size: cover; 
+border-radius: 10px; */
 }
 
 .touch-cursor {
-  cursor: url('../assets/touch-cursor.png'), auto;
+cursor: url('../assets/touch-cursor.png'), auto;
 }
 
 .calendar
@@ -81,47 +81,47 @@ color: white;
 
 
 }.picker {
-  display:flex;
+display:flex;
 
 }
 
 
 .dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+background-color: #3498DB;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
 }
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+background-color: #2980B9;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
 }
 
 /* Change color of dropdown links on hover */
@@ -131,264 +131,264 @@ color: white;
 .show {display:block;}
 
 body {
-  font-family: sans-serif !important;
+font-family: sans-serif !important;
 }
 
 img {max-width: 100%;}
-        .inbox_msg {
-          border: 1px solid #c4c4c4;
-          clear: both;
-          overflow: hidden;
-          padding: 20px;
-        }
-        .top_spac{ margin: 20px 0 0;}
-
-
-        .recent_heading {float: left; width:40%;}
-
-        .headind_srch{ padding:10px 29px 10px 20px; overflow:hidden; border-bottom:1px solid #c4c4c4;}
-
-        .recent_heading h4 {
-          color: #F6CC5D;
-          font-size: 21px;
-          margin: auto;
-        }
-
-  
-        #responseName{
-          width: 100%;
-          text-align: center;
-        }
-        
-        #chatContainer{
-          
-          padding: 10px;
-          /* background: #000; */
-          background: rgba(247,205,96,0.5); /* correct */
-          
-          /* color: #000; */
-          
-          /* align-content: center!important; */
-          /* align-items: center!important; */
-        }
-        #responseMsg{
-          overflow:hidden; 
-          margin:26px 0 26px;
-          /* display: inline-block; */
-          /* padding: 10px; */
-          vertical-align: top;
-          width: 100%;
-        }
-        #userMsg{
-          overflow:hidden; 
-          margin:26px 0 26px;
-          /* display: inline-block; */
-          padding: 10px;
-          /* overflow:hidden; 
-          margin:26px 0 26px; */
-          /* display: inline-block; */
-          vertical-align: top;
-          width: 100%;
-        }
-      
-        #innerContainerUser{
-          background: #90B0C6;
-          border-radius: 4px;
-          float: right;
-          max-width:50%;
-        }
-        #innerContainerTher{
-          background: #F6CC5D;
-          border-radius: 4px;
-          float: left;
-          max-width: 50%;
-        }
-        #responseText{
-          
-          background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-          border: medium none;
-          color: #F5F5F5;
-          font-size: 1vw;
-          min-height: 48px;
-          width: 100%;
-          font-family: 'Oxygen', sans-serif!important;
-          font-style: normal;
-          font-weight: 100;
-          max-width: 60ch;
-      
-      
-        }
-        #userText{
-          background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-          border: medium none;
-          color: #F5F5F5;
-          font-size: 1vw;
-          min-height: 48px;
-          width: 100%;
-          font-family: 'Oxygen', sans-serif!important;
-          font-style: normal;
-          font-weight: 100;
-          max-width: 50ch;
-        }
-      
-        #innerContainer{
-          width: 60%;
-          height: auto;
-          margin: 0;
-          padding: 5px;
-        }
-      
-        #typeMessageContainer{
-          width: 100%;
-          padding: 10px 0px 10px 0px;
-          text-align: left;
-        }
-        #messageBoxContainer{
-          width: 100%;
-        }
-       #typeMessageBox{
-            height:5vh;
-            width: 80%;
-            text-align: left;
-        
-       }
-       #sendMessageToOther{
-         width:20%;
-         position: absolute;
-         margin: 0;
-       }
-     
-       @media screen and (min-width: 320px) {
-        #userText, #responseText{
-          font-size: 3vw;
-          max-width: 60ch;
-        }
-        #messageHistory{
-          height: 500px;
-          padding-left: 0px;
-          padding-right: 0px;
-          overflow-y: scroll;
-        }
+      .inbox_msg {
+        border: 1px solid #c4c4c4;
+        clear: both;
+        overflow: hidden;
+        padding: 20px;
       }
-      
-      /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-      @media screen and (min-width: 768px) {
-        #userText, #responseText {
-          font-size: 1vw;
-        }
-        #messageHistory{
-          padding-left: 15px;
-          padding-right: 15px;
-        }
+      .top_spac{ margin: 20px 0 0;}
+
+
+      .recent_heading {float: left; width:40%;}
+
+      .headind_srch{ padding:10px 29px 10px 20px; overflow:hidden; border-bottom:1px solid #c4c4c4;}
+
+      .recent_heading h4 {
+        color: #F6CC5D;
+        font-size: 21px;
+        margin: auto;
       }
 
- 
-      #faqContainer{
-          
+
+      #responseName{
+        width: 100%;
+        text-align: center;
+      }
+      
+      #chatContainer{
+        
         padding: 10px;
         /* background: #000; */
-        background: rgba(126,161,144,0.8);
-        border-radius: 5px; /* correct */
-        color: white;
-        font-family: 'Oxygen', sans-serif;
+        background: rgba(247,205,96,0.5); /* correct */
+        
+        /* color: #000; */
+        
+        /* align-content: center!important; */
+        /* align-items: center!important; */
       }
-
-      #faqContainer, p{
-        max-width: 75ch;
-        font-size: 2vw;
+      #responseMsg{
+        overflow:hidden; 
+        margin:26px 0 26px;
+        /* display: inline-block; */
+        /* padding: 10px; */
+        vertical-align: top;
+        width: 100%;
       }
+      #userMsg{
+        overflow:hidden; 
+        margin:26px 0 26px;
+        /* display: inline-block; */
+        padding: 10px;
+        /* overflow:hidden; 
+        margin:26px 0 26px; */
+        /* display: inline-block; */
+        vertical-align: top;
+        width: 100%;
+      }
+    
+      #innerContainerUser{
+        background: #90B0C6;
+        border-radius: 4px;
+        float: right;
+        max-width:50%;
+      }
+      #innerContainerTher{
+        background: #F6CC5D;
+        border-radius: 4px;
+        float: left;
+        max-width: 50%;
+      }
+      #responseText{
+        
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border: medium none;
+        color: #F5F5F5;
+        font-size: 1vw;
+        min-height: 48px;
+        width: 100%;
+        font-family: 'Oxygen', sans-serif!important;
+        font-style: normal;
+        font-weight: 100;
+        max-width: 60ch;
+    
+    
+      }
+      #userText{
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border: medium none;
+        color: #F5F5F5;
+        font-size: 1vw;
+        min-height: 48px;
+        width: 100%;
+        font-family: 'Oxygen', sans-serif!important;
+        font-style: normal;
+        font-weight: 100;
+        max-width: 50ch;
+      }
+    
+      #innerContainer{
+        width: 60%;
+        height: auto;
+        margin: 0;
+        padding: 5px;
+      }
+    
+      #typeMessageContainer{
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        text-align: left;
+      }
+      #messageBoxContainer{
+        width: 100%;
+      }
+     #typeMessageBox{
+          height:5vh;
+          width: 80%;
+          text-align: left;
+      
+     }
+     #sendMessageToOther{
+       width:20%;
+       position: absolute;
+       margin: 0;
+     }
+   
+     @media screen and (min-width: 320px) {
+      #userText, #responseText{
+        font-size: 3vw;
+        max-width: 60ch;
+      }
+      #messageHistory{
+        height: 500px;
+        padding-left: 0px;
+        padding-right: 0px;
+        overflow-y: scroll;
+      }
+    }
+    
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (min-width: 768px) {
+      #userText, #responseText {
+        font-size: 1vw;
+      }
+      #messageHistory{
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
 
-  .fc-unthemed td.fc-today {
-    background-color: #E55934 !important;
-    border: oldlace;
+
+    #faqContainer{
+        
+      padding: 10px;
+      /* background: #000; */
+      background: rgba(126,161,144,0.8);
+      border-radius: 5px; /* correct */
+      color: white;
+      font-family: 'Oxygen', sans-serif;
+    }
+
+    #faqContainer, p{
+      max-width: 75ch;
+      font-size: 2vw;
+    }
+
+.fc-unthemed td.fc-today {
+  background-color: #E55934 !important;
+  border: oldlace;
 }
 
 .date-title
 {
-  margin-top: 100px !important;
-  display: flex;
-  justify-content: center;
-  color: #A17E8D;
+margin-top: 100px !important;
+display: flex;
+justify-content: center;
+color: #A17E8D;
 }
 
 
 .main-heading
 {
- margin-top: 80px;
- display: flex;
- justify-content: center;
- color: #A17E8D;
- font-size: 2em;
+margin-top: 80px;
+display: flex;
+justify-content: center;
+color: #A17E8D;
+font-size: 2em;
 }
 
 
 #nhsNumber
 {
- 
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  padding-left: 8px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  border-radius: 10px;
-  margin-top: 50px;
-  
+
+display: flex;
+justify-content: center;
+padding: 5px;
+padding-left: 8px;
+margin-left: auto;
+margin-right: auto;
+width: 200px;
+border-radius: 10px;
+margin-top: 50px;
+
 
 }
 
 .green-btn
 {
 
-  margin-top: 10px;
-  padding: 5px;
-  width: 50px;
-  background-color: #7EA292;
-  color: white;
-  border: 0px;
-  border-radius: 20px;
-  font-size: 1em;
+margin-top: 10px;
+padding: 5px;
+width: 50px;
+background-color: #7EA292;
+color: white;
+border: 0px;
+border-radius: 20px;
+font-size: 1em;
 
 }
 
 .green-btn:hover 
 {
 
-  background-color: rgb(126, 162, 146,0.8);
-  text-decoration: none;
+background-color: rgb(126, 162, 146,0.8);
+text-decoration: none;
 }
 
 #email
 {
-  padding-left: 10px;
-  border-radius: 10px;
+padding-left: 10px;
+border-radius: 10px;
 
 }
 
 #name
 {
-  padding-left: 10px;
-  border-radius: 10px;
+padding-left: 10px;
+border-radius: 10px;
 
 }
 
 #password
 {
-  padding-left: 10px;
-  border-radius: 10px;
+padding-left: 10px;
+border-radius: 10px;
 }
 
 
 .hero-image{
-  background-image: url("/frontend/assets/background.png");
-  /* position: absolute;
-  width: 100%;
-  height: 100%; */
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+background-image: url("/frontend/assets/background.png");
+/* position: absolute;
+width: 100%;
+height: 100%; */
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
 }
 
