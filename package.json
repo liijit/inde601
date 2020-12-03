@@ -34,9 +34,10 @@
     "typescript": "^4.1.2"
   },
   "scripts": {
-    "tsc": "tsc",
-    "lint": "eslint \"src/*.ts\" && eslint \"src/**/*.ts\" --fix",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint": "eslint \"src\" --ext .ts --fix",
+    "prettier-css": "cd frontend/css && prettier --find-config-path -w *.css",
+    "prettier-html": "cd frontend && prettier --find-config-path -w *.html",
+    "prettier-err": "prettier --find-config-path -w ./frontend/css/*.css",
     "dev": "tsc && nodemon -r dotenv/config src/app.ts && nodemon --watch 'src/**'",
     "html": "browser-sync start --server --files '*.html, css/*.css'",
     "dev-typescript-w": "tsnd --respawn src/app.ts --watch src/*.ts",
