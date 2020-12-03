@@ -3,6 +3,7 @@ h1
 {
   font-size: 2em;
   font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
  
 }
@@ -82,7 +83,7 @@ margin-top: 40px;
  padding: 40px;
  justify-content: center;
  color: white;
- font-family: 'Quicksand', sans-serif;
+ font-family: 'oxygen', sans-serif;
 }
 
 
@@ -91,14 +92,77 @@ margin-top: 40px;
 
   margin-left: auto;
   margin-right: auto;
-  margin-top: 250px;
+  margin-top: 25%;
   justify-content: center;
   background-color: rgba(247,205,96,0.8);
   border-radius: 20px;
   width: 550px;
-  height: 350px;
+  height: 300px;
  
 }
+
+#nhsNumber
+{
+ 
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-left: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 10px;
+  border: 0px;
+  margin-top: 20px;
+  
+}
+
+.green-btn
+{
+
+  
+  margin-top: 10px;
+  margin-left: auto;
+  padding: 5px;
+  width: 50px;
+  background-color: #7EA292;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 1em;
+
+}
+
+.nhs-btn:hover 
+{
+
+  background-color: rgb(126, 162, 146,0.8);
+  text-decoration: none;
+}
+
+#email
+{
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 0px;
+
+}
+
+#username
+{
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 0px;
+
+}
+
+#password
+{
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 0px;
+}
+
 
 .calendar-bg
 {
@@ -289,64 +353,3 @@ img {max-width: 100%;}
 
 
 
-#nhsNumber
-{
- 
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  padding-left: 8px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  border-radius: 10px;
-  border: 0px;
-  margin-top: 40px;
-  
-}
-
-.green-btn
-{
-
-  
-  margin-top: 10px;
-  margin-left: auto;
-  padding: 5px;
-  width: 50px;
-  background-color: #7EA292;
-  color: white;
-  border: 0px;
-  border-radius: 10px;
-  font-size: 1em;
-
-}
-
-.nhs-btn:hover 
-{
-
-  background-color: rgb(126, 162, 146,0.8);
-  text-decoration: none;
-}
-
-#email
-{
-  padding-left: 10px;
-  border-radius: 10px;
-  border: 0px;
-
-}
-
-#username
-{
-  padding-left: 10px;
-  border-radius: 10px;
-  border: 0px;
-
-}
-
-#password
-{
-  padding-left: 10px;
-  border-radius: 10px;
-  border: 0px;
-}
