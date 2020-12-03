@@ -1,26 +1,37 @@
 
 h1
 {
-  font-size: 2em
+  font-size: 2em;
+  font-family: 'Oxygen', sans-serif;
+  text-transform: uppercase;
  
 }
+
+h2 
+{
+  font-size: 1.8em;
+  font-family: 'Oxygen', sans-serif;
+  text-transform: uppercase;
+
+}
+
+
+h3 {
+  font-size: 1.5em;
+  font-family: Arial;
+  margin: 10px;
+  
+  font-family: 'Quicksand', sans-serif;
+}
+
+
 
 h4
 {
 
-  font-size: 1.4em
-
-
+  font-size: 1.4em;
+  
 }
-
-
-
-h3 {
-    font-size: 18px;
-    font-family: Arial;
-    margin: 10px;
-    text-transform: uppercase;
-  }
 
 
  
@@ -71,7 +82,7 @@ margin-top: 40px;
  padding: 40px;
  justify-content: center;
  color: white;
- ;
+ font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -289,6 +300,7 @@ img {max-width: 100%;}
   margin-right: auto;
   width: 200px;
   border-radius: 10px;
+  border: 0px;
   margin-top: 40px;
   
 }
