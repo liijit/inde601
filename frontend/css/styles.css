@@ -211,7 +211,7 @@ img {max-width: 100%;}
           font-size: 1vw;
           min-height: 48px;
           width: 100%;
-          font-family: acumin-pro, sans-serif!important;
+          font-family: 'Oxygen', sans-serif!important;
           font-style: normal;
           font-weight: 100;
           max-width: 60ch;
@@ -295,7 +295,7 @@ img {max-width: 100%;}
 
       #faqContainer, p{
         max-width: 75ch;
-        font-size: 1.5vw;
+        font-size: 2vw;
       }
 
   .fc-unthemed td.fc-today {
