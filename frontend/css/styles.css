@@ -161,9 +161,11 @@ img {max-width: 100%;}
         }
         
         #chatContainer{
+          
           padding: 10px;
           /* background: #000; */
           background: rgba(247,205,96,0.5); /* correct */
+          
           /* color: #000; */
           
           /* align-content: center!important; */
@@ -209,7 +211,7 @@ img {max-width: 100%;}
           font-size: 1vw;
           min-height: 48px;
           width: 100%;
-          font-family: acumin-pro, sans-serif;
+          font-family: acumin-pro, sans-serif!important;
           font-style: normal;
           font-weight: 100;
           max-width: 60ch;
@@ -223,7 +225,7 @@ img {max-width: 100%;}
           font-size: 1vw;
           min-height: 48px;
           width: 100%;
-          font-family: acumin-pro, sans-serif;
+          font-family: 'Oxygen', sans-serif!important;
           font-style: normal;
           font-weight: 100;
           max-width: 50ch;
@@ -262,8 +264,10 @@ img {max-width: 100%;}
           max-width: 60ch;
         }
         #messageHistory{
+          height: 500px;
           padding-left: 0px;
           padding-right: 0px;
+          overflow-y: scroll;
         }
       }
       
@@ -278,7 +282,21 @@ img {max-width: 100%;}
         }
       }
 
+ 
+      #faqContainer{
+          
+        padding: 10px;
+        /* background: #000; */
+        background: rgba(126,161,144,0.8);
+        border-radius: 5px; /* correct */
+        color: white;
+        font-family: 'Oxygen', sans-serif;
+      }
 
+      #faqContainer, p{
+        max-width: 75ch;
+        font-size: 1.5vw;
+      }
 
   .fc-unthemed td.fc-today {
     background-color: #E55934 !important;
