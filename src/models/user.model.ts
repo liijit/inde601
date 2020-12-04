@@ -11,7 +11,7 @@ class UserCreate extends Typegoose {
   @prop({ required: true, trim: true })
   email?: string;
 
-  @prop({ required: false, minlength: 8 })
+  @prop({ required: true, minlength: 8 })
   password?: string;
 }
 

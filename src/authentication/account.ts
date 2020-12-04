@@ -33,9 +33,8 @@ export class Verify extends Account {
 
   nameCheck = () => {
     return new Promise((resolve, reject) => {
-      console.log('foo');
+      console.log('Yes');
     });
-    return;
   };
 
   emailCheck = () => {
@@ -76,12 +75,10 @@ export class Verify extends Account {
 }
 
 export class Register extends Verify implements IVerify {
-  pwHash = () => {
-    const salt: any = bcrypt.genSalt(10, function (err, salt) {
-      return salt;
-    });
+  pwHash = async () => {
+    const salt: any = await bcrypt.genSalt();
     return bcrypt.hash(this.password, salt).then((res) => {
-      this.password = res;
+      return res;
     });
   };
 }

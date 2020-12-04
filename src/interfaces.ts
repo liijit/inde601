@@ -22,6 +22,7 @@ export interface ICrypto {
 
 export interface IRegister {
   name: string;
+  surname: string;
   email: string;
   password: string;
 }
