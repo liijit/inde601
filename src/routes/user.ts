@@ -16,12 +16,16 @@ route.post('/register', async (req: Request, res: Response) => {
   Promise.all(map)
     .then(async (result) => {
       const hash = await account.pwHash();
-      console.log(hash);
-      const accountDB = new userSchema({ name: account.name, surname: account.surname, email: account.email, password: hash });
+      const accountDB = new userSchema({
+        name: account.name,
+        surname: account.surname,
+        email: account.email,
+        password: hash,
+      });
       accountDB
         .save()
         .then((result) => {
-          console.log('details saved');
+          console.log('Account saved');
         })
         .catch((error) => {
           console.log(error);
