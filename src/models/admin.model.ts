@@ -1,8 +1,8 @@
 import { prop, Typegoose } from 'typegoose';
 
-class NhsidCreate extends Typegoose {
+class Nhsid extends Typegoose {
   @prop({ required: false, minlength: 11, maxlength: 12 })
   nhsid?: string;
 }
 
-export const nhsidSchema = new NhsidCreate().getModelForClass(NhsidCreate);
+export const nhsidSchema = new Nhsid().getModelForClass(Nhsid);

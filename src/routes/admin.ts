@@ -1,9 +1,9 @@
 import { Router, Request, Response } from 'express';
 import { Verify } from '../authentication/account';
 
-import { INhs, IStaffKey } from '../interfaces';
-
 import { nhsidSchema } from '../models/admin.model';
+
+import { INhs, IStaffKey } from '../interfaces';
 
 const route = Router();
 
