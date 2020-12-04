@@ -1,20 +1,18 @@
 import { Router, Request, Response } from 'express';
-import { Account, Verify, Register } from '../authentication/account';
+import { Register, Verify } from '../authentication/account';
 
 import { userSchema } from '../models/user.model';
 
-import { Iregister } from '../interfaces';
+import { IRegister } from '../interfaces';
 
 const route = Router();
 
 route.post('/register', async (req: Request, res: Response) => {
-  const data: Iregister = req.body;
-  const Acc = new Register(data.email, data.password);
-  // Acc.dbEmailLookup()
-  // Acc.emailCheck()
-  // Acc.passwordHash()
-  const account = new userSchema({ name: data.name, email: data.email, password: data.password });
-  account
+  const data: IRegister = req.body;
+  const account = new Register(data.name, data.surname, data.email, data.password);
+  account.pwHash();
+  const accountDB = new userSchema({ name: account.name, email: account.email, password: account.password });
+  accountDB
     .save()
     .then((result) => {
       console.log('details saved');

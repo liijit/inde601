@@ -7,10 +7,14 @@ import { IVerify } from '../interfaces';
 import { userSchema } from '../models/user.model';
 
 export class Account implements IVerify {
+  name: string;
+  surname: string;
   email: string;
   password: string;
 
-  constructor(email: string, password: string) {
+  constructor(name: string, surname: string, email: string, password: string) {
+    this.name = name;
+    this.surname = surname;
     this.email = email;
     this.password = password;
   }
@@ -25,6 +29,13 @@ export class Verify extends Account {
         reject({ msg: "Number isn't numeric" });
       }
     });
+  };
+
+  nameCheck = () => {
+    return new Promise((resolve, reject) => {
+      console.log('foo');
+    });
+    return;
   };
 
   emailCheck = () => {
@@ -65,12 +76,12 @@ export class Verify extends Account {
 }
 
 export class Register extends Verify implements IVerify {
-  passwordHash = () => {
+  pwHash = () => {
     const salt: any = bcrypt.genSalt(10, function (err, salt) {
       return salt;
     });
     return bcrypt.hash(this.password, salt).then((res) => {
-      return res;
+      this.password = res;
     });
   };
 }

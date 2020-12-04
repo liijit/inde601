@@ -1,42 +1,29 @@
 import { prop, Typegoose } from 'typegoose';
 import isEmail from 'validator/lib/isEmail';
 
-class User extends Typegoose {
+class UserCreate extends Typegoose {
   @prop({ required: true })
   name?: string;
 
   @prop({ required: false })
   surname?: string;
 
-  @prop({
-    required: true,
-    trim: true,
-    validate: {
-      validator: (e) => {
-        return new Promise((resolve, reject) => {
-          if (isEmail(e) === true) {
-            resolve(true);
-          } else {
-            reject({ msg: 'Incorrect email format' });
-          }
-        });
-      },
-      message: 'Mongoose Error incorrect email',
-    },
-  })
+  @prop({ required: true, trim: true })
   email?: string;
 
   @prop({ required: false, minlength: 8 })
   password?: string;
 }
 
-class Staff extends User {
+class SlotCreate extends Typegoose {
   @prop({ required: true })
-  code?: string;
+  userid?: string;
 
   @prop({ required: true })
-  schedule?: Record<string, unknown>;
+  slot?: Date;
 }
 
-export const userSchema = new User().getModelForClass(User);
-export const staffSchema = new Staff().getModelForClass(Staff);
+export const userSchema = new UserCreate().getModelForClass(UserCreate);
+export const slotSchema = new SlotCreate().getModelForClass(SlotCreate, {
+  schemaOptions: { timestamps: { createdAt: 'creationAt', updatedAt: 'UpdatesAt' } },
+});

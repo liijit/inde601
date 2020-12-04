@@ -1,12 +1,7 @@
 import * as crypto from 'crypto';
 import bcrypt from 'bcrypt';
 
-import { IBcrypt } from '../interfaces';
-
-interface Config {
-  iv: string;
-  data: any;
-}
+import { ICrypto } from '../interfaces';
 
 export class stringEncrypt {
   algorithm = process.env.ALGORITHM!;
@@ -22,7 +17,7 @@ export class stringEncrypt {
     };
   };
 
-  decrypt = (e: Config) => {
+  decrypt = (e: ICrypto) => {
     const decipher = crypto.createDecipheriv(this.algorithm, this.sKey, Buffer.from(e.iv, 'hex'));
     const decrypted = Buffer.concat([decipher.update(Buffer.from(e.data, 'hex'))]);
     return decrypted.toString();

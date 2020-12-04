@@ -3,11 +3,11 @@ export interface IVerify {
   password: string;
 }
 
-export interface InhsCheck {
+export interface INhsCheck {
   no: number;
 }
 
-export interface InhsPost {
+export interface INhs {
   nhsid: string;
 }
 
@@ -15,13 +15,22 @@ export interface IBcrypt {
   salt: string;
 }
 
-export interface Iregister {
+export interface ICrypto {
+  iv: string;
+  data: any;
+}
+
+export interface IRegister {
   name: string;
   email: string;
   password: string;
 }
 
-export interface ISchedule {
-  date: Date;
-  account: string;
+export interface ISession {
+  userid: string;
+  slot: Date;
+}
+
+export interface IStaffKey {
+  key: string;
 }
