@@ -3,7 +3,7 @@ import bcrypt from 'bcrypt';
 
 import { ICrypto } from '../interfaces';
 
-export class stringEncrypt {
+export class StringEncrypt {
   algorithm = process.env.ALGORITHM!;
   sKey = process.env.EKEY!;
   iv = crypto.randomBytes(16)!;
