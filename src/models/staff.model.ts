@@ -1,6 +1,6 @@
-import { prop, Typegoose } from 'typegoose';
+import { prop, getModelForClass } from '@typegoose/typegoose';
 
-class Schedule extends Typegoose {
+class Schedule {
   @prop({ required: true })
   code?: string;
 
@@ -8,4 +8,4 @@ class Schedule extends Typegoose {
   schedule?: Record<string, unknown>;
 }
 
-export const scheduleSchema = new Schedule().getModelForClass(Schedule);
+export const scheduleSchema = getModelForClass(Schedule);

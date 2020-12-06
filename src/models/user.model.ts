@@ -1,7 +1,7 @@
-import { prop, Typegoose } from 'typegoose';
+import { prop, getModelForClass } from '@typegoose/typegoose';
 import isEmail from 'validator/lib/isEmail';
 
-class User extends Typegoose {
+class User {
   @prop({
     required: true,
     validate: {
@@ -85,7 +85,7 @@ class User extends Typegoose {
   password?: string;
 }
 
-class Slot extends Typegoose {
+class Slot {
   @prop({ required: true })
   userid?: string;
 
@@ -93,7 +93,7 @@ class Slot extends Typegoose {
   slot?: Date;
 }
 
-export const userSchema = new User().getModelForClass(User);
-export const slotSchema = new Slot().getModelForClass(Slot, {
+export const userSchema = getModelForClass(User);
+export const slotSchema = getModelForClass(Slot, {
   schemaOptions: { timestamps: { createdAt: 'creationAt', updatedAt: 'UpdatesAt' } },
 });
