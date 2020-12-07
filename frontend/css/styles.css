@@ -1,28 +1,41 @@
-h1 {
+
+h1
+{
   font-size: 2em;
   font-family: 'Oxygen', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+ 
 }
 
-h2 {
+h2 
+{
   font-size: 1.8em;
   font-family: 'Oxygen', sans-serif;
   text-transform: uppercase;
+
 }
+
 
 h3 {
   font-size: 1.5em;
   font-family: Arial;
   margin: 10px;
-
+  
   font-family: 'Quicksand', sans-serif;
 }
 
-h4 {
+
+
+h4
+{
+
   font-size: 1.4em;
+  
 }
 
+
+ 
 .img {
   display: flex;
   align-items: center;
@@ -30,14 +43,18 @@ h4 {
 }
 
 .img-overlay:hover {
+
   opacity: 0.8;
 }
 
-.mt {
-  margin-top: 40px;
+.mt
+{
+margin-top: 40px;
 }
 
-.heading-text {
+
+.heading-text
+{
   margin-top: 180px;
   margin-left: auto;
   margin-right: auto;
@@ -46,34 +63,47 @@ h4 {
   color: whitesmoke;
 }
 
-.main-bg {
+.main-bg 
+{
+ 
   background-image: url('../assets/background.png');
   background-size: cover;
+
 }
 
 .touch-cursor {
   cursor: url('../assets/touch-cursor.png'), auto;
 }
 
-.main-heading {
-  padding: 40px;
-  justify-content: center;
-  color: white;
-  font-family: 'Quicksand', sans-serif;
+
+
+.main-heading
+{
+ 
+ padding: 40px;
+ justify-content: center;
+ color: white;
+ font-family: 'Quicksand', sans-serif;
 }
 
-.yellow-bg {
+
+.yellow-bg
+{
+
   margin-left: auto;
   margin-right: auto;
   margin-top: 250px;
   justify-content: center;
-  background-color: rgba(247, 205, 96, 0.8);
+  background-color: rgba(247,205,96,0.8);
   border-radius: 20px;
   width: 550px;
   height: 350px;
+ 
 }
 
-#nhsNumber {
+#nhsNumber
+{
+ 
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -84,85 +114,110 @@ h4 {
   border-radius: 10px;
   border: 0px;
   margin-top: 20px;
+  
 }
 
-.green-btn {
+.green-btn
+{
+
+  
   margin-top: 10px;
   margin-left: auto;
   padding: 5px;
   width: 50px;
-  background-color: #7ea292;
+  background-color: #7EA292;
   color: white;
   border: 0px;
   border-radius: 10px;
   font-size: 1em;
+
 }
 
-.nhs-btn:hover {
-  background-color: rgb(126, 162, 146, 0.8);
+.nhs-btn:hover 
+{
+
+  background-color: rgb(126, 162, 146,0.8);
   text-decoration: none;
 }
 
-#email {
+#email
+{
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 0px;
+
+}
+
+#username
+{
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 0px;
+
+}
+
+#password
+{
   padding-left: 10px;
   border-radius: 10px;
   border: 0px;
 }
 
-#username {
-  padding-left: 10px;
-  border-radius: 10px;
-  border: 0px;
-}
 
-#password {
-  padding-left: 10px;
-  border-radius: 10px;
-  border: 0px;
-}
-
-.calendar-bg {
+.calendar-bg
+{
+  
   margin-top: 20px;
-  background-color: rgba(247, 205, 96, 0.8);
+  background-color: rgba(247,205,96,0.8);
   border-radius: 20px;
   width: 500px;
 }
 
-.calendar {
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  padding-top: 15px;
-  height: 658px;
-  width: 750px;
-  background-color: #a17e8d;
-  border-radius: 20px;
-  font-size: 1em;
-  font-family: 'Trebuchet MS';
-  color: white;
+.calendar
+{
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+padding-top: 15px;
+height: 658px;
+width: 750px;
+background-color: #A17E8D;
+border-radius: 20px;
+font-size: 1em;
+font-family: 'Trebuchet MS';
+color: white;
 }
 
 .fc-unthemed td.fc-today {
-  background-color: #90b0c644 !important;
+  background-color:  #90b0c644 !important;
   border: 1px;
+
 }
 
-.fc td {
+
+.fc td 
+{
+
+  border-style: dashed;
+  border-width: 0.5px;
+  border-color: #4d3b43;
+
+}
+
+.fc th
+{
+
   border-style: dashed;
   border-width: 0.5px;
   border-color: #4d3b43;
 }
 
-.fc th {
-  border-style: dashed;
-  border-width: 0.5px;
-  border-color: #4d3b43;
-}
 
 .dropbtn {
+
   justify-content: center;
-  background-color: #90b0c6;
+  background-color: #90B0C6 ;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -171,13 +226,13 @@ h4 {
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: #90b0c6;
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #90B0C6;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
+  
   margin-top: 20px;
   display: 50px;
   margin-left: auto;
@@ -190,7 +245,7 @@ h4 {
   width: 80px;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -203,102 +258,98 @@ h4 {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
+.dropdown-content a:hover {background-color: #ddd}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-  display: block;
-}
+.show {display:block;}
 
 body {
   font-family: sans-serif !important;
 }
 
-img {
-  max-width: 100%;
-}
-.inbox_msg {
-  border: 1px solid #c4c4c4;
-  clear: both;
-  overflow: hidden;
-  padding: 20px;
-}
-.top_spac {
-  margin: 20px 0 0;
-}
+img {max-width: 100%;}
+        .inbox_msg {
+          border: 1px solid #c4c4c4;
+          clear: both;
+          overflow: hidden;
+          padding: 20px;
+        }
+        .top_spac{ margin: 20px 0 0;}
 
-.recent_heading {
-  float: left;
-  width: 40%;
-}
 
-.headind_srch {
-  padding: 10px 29px 10px 20px;
-  overflow: hidden;
-  border-bottom: 1px solid #c4c4c4;
-}
+        .recent_heading {float: left; width:40%;}
 
-.recent_heading h4 {
-  color: #f6cc5d;
-  font-size: 21px;
-  margin: auto;
-}
+        .headind_srch{ padding:10px 29px 10px 20px; overflow:hidden; border-bottom:1px solid #c4c4c4;}
 
-#therapistName {
-  width: 100%;
-  text-align: center;
-}
+        .recent_heading h4 {
+          color: #F6CC5D;
+          font-size: 21px;
+          margin: auto;
+        }
 
-#chatContainer,
-#messageHistory {
-  padding: 40px;
-  align-content: center !important;
-  align-items: center !important;
-}
-#therapistMsg {
-  overflow: hidden;
-  margin: 26px 0 26px;
-  float: left;
-  background: #f6cc5d;
-  display: inline-block;
-  padding: 10px;
-  vertical-align: top;
-  width: 92%;
-}
-#userMsg {
-  overflow: hidden;
-  margin: 26px 0 26px;
-  /* width: max-content; */
-  float: right;
-  background: #2980b9;
-  display: inline-block;
-  padding: 10px;
-  overflow: hidden;
-  margin: 26px 0 26px;
-  display: inline-block;
-}
-#therapistText {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: medium none;
-  color: #4c4c4c;
-  font-size: 15px;
-  min-height: 48px;
-  width: 100%;
-}
-#userText {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: medium none;
-  color: #4c4c4c;
-  font-size: 15px;
-  min-height: 48px;
-  width: 100%;
-}
+   
+  #therapistName{
+    width: 100%;
+    text-align: center;
+  }
+  
+  #chatContainer,#messageHistory{
+    padding: 40px;
+    align-content: center!important;
+    align-items: center!important;
+  }
+  #therapistMsg{
+    overflow:hidden; 
+    margin:26px 0 26px;
+    float: left;
+    background: #F6CC5D;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    width: 92%;
+  }
+  #userMsg{
+    overflow:hidden; 
+    margin:26px 0 26px;
+    /* width: max-content; */
+    float: right;
+    background: #2980B9;
+    display: inline-block;
+    padding: 10px;
+    overflow:hidden; 
+    margin:26px 0 26px;
+    display: inline-block;
+  }
+  #therapistText{
+    
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
 
-.date-title {
+  }
+  #userText{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
+  }
+
+
+
+
+
+.date-title
+{
   margin-top: 100px !important;
   display: flex;
   justify-content: center;
-  color: #a17e8d;
+  color: #A17E8D;
 }
+
+
+
