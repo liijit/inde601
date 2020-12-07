@@ -1,17 +1,15 @@
 import { Router, Request, Response } from 'express';
 import { Verify } from '../authentication/account';
 
-import { InhsPost } from '../interfaces';
+import { nhsidSchema } from '../models/admin.model';
 
-import { nhsCreationSchema } from '../models/admin.model';
+import { INhs, IStaffKey } from '../interfaces';
 
 const route = Router();
 
 route.post('/admin/add/nhs', (req: Request, res: Response) => {
-  const data: InhsPost = req.body;
-  const account = new nhsCreationSchema({ nhsid: data.nhsid });
-  // console.log(data)
-  // console.log(account)
+  const data: INhs = req.body;
+  const account = new nhsidSchema({ nhsid: data.nhsid });
   account
     .save()
     .then(() => res.json({ msg: 'Nhs No. Registered' }))

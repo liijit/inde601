@@ -1,9 +1,8 @@
-import { prop, Typegoose } from 'typegoose';
+import { prop, getModelForClass } from '@typegoose/typegoose';
 
-// @modelOptions({ schemaOptions: { collection: 'nhsList' } })
-class NHSid extends Typegoose {
+class Nhsid {
   @prop({ required: false, minlength: 11, maxlength: 12 })
   nhsid?: string;
 }
 
-export const nhsCreationSchema = new NHSid().getModelForClass(NHSid);
+export const nhsidSchema = getModelForClass(Nhsid);

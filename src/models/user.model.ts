@@ -1,42 +1,99 @@
-import { prop, Typegoose } from 'typegoose';
+import { prop, getModelForClass } from '@typegoose/typegoose';
 import isEmail from 'validator/lib/isEmail';
 
-class User extends Typegoose {
-  @prop({ required: true })
+class User {
+  @prop({
+    required: true,
+    validate: {
+      validator: (e) => {
+        const result = RegExp.prototype[Symbol.match].call(/^[a-zA-Z\s]+$/, e);
+        if (result) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+      message: '{VALUE} is not valid',
+    },
+  })
   name?: string;
 
-  @prop({ required: false })
+  @prop({
+    required: false,
+    validate: {
+      validator: (e) => {
+        const result = RegExp.prototype[Symbol.match].call(/^[a-zA-Z\s]+$/, e);
+        if (e === '') {
+          return true;
+        } else if (result) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+      message: '{VALUE} is not valid',
+    },
+  })
   surname?: string;
 
   @prop({
     required: true,
+    unique: true,
+    lowercase: true,
     trim: true,
-    validate: {
-      validator: (e) => {
-        return new Promise((resolve, reject) => {
-          if (isEmail(e) === true) {
-            resolve(true);
+    validate: [
+      {
+        validator: (e) => {
+          const result = RegExp.prototype[Symbol.match].call(/\S+@\S+\.\S+/, e);
+          if (result) {
+            return true;
           } else {
-            reject({ msg: 'Incorrect email format' });
+            return false;
           }
-        });
+        },
+        message: '{VALUE} is not valid',
       },
-      message: 'Mongoose Error incorrect email',
-    },
+    ],
   })
   email?: string;
 
-  @prop({ required: false, minlength: 8 })
+  @prop({
+    required: true,
+    validate: [
+      {
+        validator: (e) => {
+          return e.length > 6;
+        },
+        message: 'Password must include more than 6 characters',
+      },
+      {
+        validator: (e) => {
+          const result = RegExp.prototype[Symbol.match].call(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,}$/,
+            e,
+          );
+          if (result) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        message: 'Password must include 1 capital and 1 special character',
+      },
+    ],
+  })
   password?: string;
 }
 
-class Staff extends User {
+class Slot {
   @prop({ required: true })
-  code?: string;
+  userid?: string;
 
   @prop({ required: true })
-  schedule?: Record<string, unknown>;
+  slot?: Date;
 }
 
-export const userSchema = new User().getModelForClass(User);
-export const staffSchema = new Staff().getModelForClass(Staff);
+export const userSchema = getModelForClass(User);
+export const slotSchema = getModelForClass(Slot, {
+  schemaOptions: { timestamps: { createdAt: 'creationAt', updatedAt: 'UpdatesAt' } },
+});
