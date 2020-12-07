@@ -15,8 +15,10 @@ h3 {
   font-size: 1.5em;
   font-family: Arial;
   margin: 10px;
-
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Oxygen', sans-serif;
+  text-transform: uppercase;
+  /* font-family: 'Quicksand', sans-serif; */
+  
 }
 
 h4 {
@@ -369,6 +371,17 @@ img {
   #responseText {
     font-size: 1vw;
   }
+
+  /* p{
+    max-width: 60ch!important;
+    font-size: 2vw!important;
+    letter-spacing: -1.5px!important;
+  }
+  h3{
+    font-size: 3vw!important;
+    
+    /* text-transform: uppercase!important; */
+  */
   #messageHistory {
     padding-left: 15px;
     padding-right: 15px;
@@ -376,18 +389,23 @@ img {
 }
 
 #faqContainer {
-  padding: 10px;
+  /* padding: 10px; */
   /* background: #000; */
   background: rgba(126, 161, 144, 0.8);
-  border-radius: 5px; /* correct */
+  /* border-radius: 5px; correct */
   color: white;
   font-family: 'Oxygen', sans-serif;
+  height: 500px;
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow-y: scroll;
+  /* max-width: 75ch; */
 }
 
-#faqContainer,
-p {
-  max-width: 75ch;
-  font-size: 2vw;
+#faqContainer p {
+  /* max-width: 50ch; */
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .fc-unthemed td.fc-today {
@@ -453,14 +471,3 @@ p {
   border-radius: 10px;
 }
 
-.hero-image {
-  background-image: url('/frontend/assets/background.png');
-  /* position: absolute;
-width: 100%;
-height: 100%; */
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
