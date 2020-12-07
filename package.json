@@ -4,6 +4,8 @@
   "private": "true",
   "description": "",
   "main": "ts-pile/app.js",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@typegoose/typegoose": "^7.4.5",
     "bcrypt": "^5.0.0",
@@ -30,6 +32,8 @@
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-prettier": "^3.2.0",
+    "husky": "^4.3.4",
+    "lint-staged": "^10.5.3",
     "nodemon": "^2.0.6",
     "prettier": "2.2.1",
     "ts-node": "^9.1.0",
@@ -48,6 +52,20 @@
   "optionalDependencies": {
     "fsevents": "*"
   },
-  "author": "",
-  "license": "ISC"
+  "lint-staged": {
+    "frontend/css/*.css": [
+      "prettier --find-config-path -w", "git add"
+    ],
+    "frontend/*/html": [
+      "prettier --find-config-path -w", "git add"
+    ],
+    "src/*.ts": [
+      "eslint . --fix", "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run prettier-css && npm run prettier-html"
+    }
+  }
 }
