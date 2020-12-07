@@ -15,8 +15,8 @@ h3 {
   font-size: 1.5em;
   font-family: Arial;
   margin: 10px;
-  font-family: 'Oxygen', sans-serif;
-  text-transform: uppercase;
+  
+  font-family: 'Quicksand', sans-serif;
   /* font-family: 'Quicksand', sans-serif; */
   
 }
@@ -25,6 +25,10 @@ h4 {
   font-size: 1.4em;
 }
 
+/* 
+#createAcCont{
+  align-content: left;
+} */
 .img {
   display: flex;
   align-items: center;
@@ -40,17 +44,19 @@ h4 {
 }
 
 .heading-text {
-  margin-top: 180px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
   color: whitesmoke;
+
 }
 
 .main-bg {
-  background-image: url('../assets/background.png');
+  background-image: url('../assets/bkg2.png');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .touch-cursor {
@@ -61,7 +67,6 @@ h4 {
   padding: 40px;
   justify-content: center;
   color: white;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .yellow-bg {
@@ -100,6 +105,22 @@ h4 {
   font-size: 1em;
 }
 
+.btn-info {
+
+  padding: 5px;
+  width: 50px;
+  background-color: #7EA292;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 1em;
+
+}
+.btn-info:hover{
+  background-color: #7ea292c5;
+
+}
+
 .nhs-btn:hover {
   background-color: rgb(126, 162, 146, 0.8);
   text-decoration: none;
@@ -110,7 +131,14 @@ h4 {
   border-radius: 10px;
   border: 0px;
 }
+#name
+{
 
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 0px;
+
+}
 #username {
   padding-left: 10px;
   border-radius: 10px;
@@ -141,7 +169,7 @@ h4 {
   background-color: #a17e8d;
   border-radius: 20px;
   font-size: 1em;
-  font-family: 'Trebuchet MS';
+  font-family: 'Oxygen', sans-serif !important;
   color: white;
 }
 
@@ -257,8 +285,8 @@ img {
 #chatContainer {
   padding: 10px;
   /* background: #000; */
-  background: rgba(247, 205, 96, 0.5); /* correct */
-
+  /* background: rgba(247, 205, 96, 0.5); correct */
+  background: white;
   /* color: #000; */
 
   /* align-content: center!important; */
@@ -422,12 +450,14 @@ img {
 
 .main-heading {
   margin-top: 80px;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   color: #a17e8d;
   font-size: 2em;
 }
-
+.main-heading p{
+  text-align: left;
+}
 #nhsNumber {
   display: flex;
   justify-content: center;
