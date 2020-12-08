@@ -54,13 +54,16 @@
   },
   "lint-staged": {
     "frontend/css/*.css": [
-      "prettier --find-config-path -w", "git add"
+      "prettier --find-config-path -w",
+      "git add"
     ],
     "frontend/*/html": [
-      "prettier --find-config-path -w", "git add"
+      "prettier --find-config-path -w",
+      "git add"
     ],
     "src/*.ts": [
-      "eslint . --fix", "git add"
+      "eslint . --fix",
+      "git add"
     ]
   },
   "husky": {

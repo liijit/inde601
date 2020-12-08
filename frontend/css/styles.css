@@ -1,8 +1,8 @@
 h1 {
-  font-size: 2em;
+  font-size: 0.8em;
   font-family: 'Oxygen', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: bold;
+  color: #a17e8d;
 }
 
 h2 {
@@ -12,11 +12,10 @@ h2 {
 }
 
 h3 {
+  margin-top: 10px;
   font-size: 1.5em;
-  font-family: Arial;
-  margin: 10px;
-
   font-family: 'Quicksand', sans-serif;
+  font-weight: lighter;
   /* font-family: 'Quicksand', sans-serif; */
 }
 
@@ -24,10 +23,11 @@ h4 {
   font-size: 1.4em;
 }
 
-/* 
-#createAcCont{
-  align-content: left;
-} */
+p {
+  font-size: 0.6em;
+  letter-spacing: 0.5px;
+}
+
 .img {
   display: flex;
   align-items: center;
@@ -62,24 +62,30 @@ h4 {
 }
 
 .main-heading {
+  margin-top: 20px;
   padding: 40px;
   justify-content: center;
-  color: white;
+  color: #a17e8d;
+  font-size: 2em;
 }
 
-.yellow-bg {
+.main-heading p {
+  text-align: left;
+}
+
+.white-bg {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 250px;
+  margin-top: 15%;
   justify-content: center;
-  background-color: rgba(247, 205, 96, 0.8);
+  background-color: #ffffffde;
   border-radius: 20px;
   width: 550px;
-  height: 350px;
+  height: 450px;
 }
 
 #nhsNumber {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   padding: 5px;
   padding-left: 8px;
@@ -89,9 +95,10 @@ h4 {
   border-radius: 10px;
   border: 0px;
   margin-top: 20px;
+  font-size: 0.5em !important;
 }
 
-.green-btn {
+/* .green-btn {
   margin-top: 10px;
   margin-left: auto;
   padding: 5px;
@@ -101,17 +108,21 @@ h4 {
   border: 0px;
   border-radius: 10px;
   font-size: 1em;
-}
+} */
 
 .btn-info {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 10px;
   padding: 5px;
   width: 50px;
   background-color: #7ea292;
   color: white;
   border: 0px;
   border-radius: 10px;
-  font-size: 1em;
+  font-size: 0.5em;
 }
+
 .btn-info:hover {
   background-color: #7ea292c5;
 }
@@ -121,11 +132,17 @@ h4 {
   text-decoration: none;
 }
 
+.btn-secondary {
+  height: 35px;
+  margin-top: 10px;
+}
+
 #email {
   padding-left: 10px;
   border-radius: 10px;
   border: 0px;
 }
+
 #name {
   padding-left: 10px;
   border-radius: 10px;
@@ -145,7 +162,7 @@ h4 {
 
 .calendar-bg {
   margin-top: 20px;
-  background-color: rgba(247, 205, 96, 0.8);
+  background-color: #ffffffde;
   border-radius: 20px;
   width: 500px;
 }
@@ -428,7 +445,6 @@ img {
 }
 
 .fc-unthemed td.fc-today {
-  background-color: #e55934 !important;
   border: oldlace;
 }
 
@@ -437,57 +453,4 @@ img {
   display: flex;
   justify-content: center;
   color: #a17e8d;
-}
-
-.main-heading {
-  margin-top: 80px;
-  /* display: flex; */
-  justify-content: center;
-  color: #a17e8d;
-  font-size: 2em;
-}
-.main-heading p {
-  text-align: left;
-}
-#nhsNumber {
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  padding-left: 8px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  border-radius: 10px;
-  margin-top: 50px;
-}
-
-.green-btn {
-  margin-top: 10px;
-  padding: 5px;
-  width: 50px;
-  background-color: #7ea292;
-  color: white;
-  border: 0px;
-  border-radius: 20px;
-  font-size: 1em;
-}
-
-.green-btn:hover {
-  background-color: rgb(126, 162, 146, 0.8);
-  text-decoration: none;
-}
-
-#email {
-  padding-left: 10px;
-  border-radius: 10px;
-}
-
-#name {
-  padding-left: 10px;
-  border-radius: 10px;
-}
-
-#password {
-  padding-left: 10px;
-  border-radius: 10px;
 }

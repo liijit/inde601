@@ -16,24 +16,23 @@
     <title>Home Page</title>
   </head>
   <body class="main-bg">
-    <div class="col-2"></div>
-    <div class="container col-8" id="createAcCont">
-      <div class="main-heading yellow-bg">
-        <h1>Welcome !!</h1>
+    <div class="container col-xl-8 col-s-5 mt-5" id="createAcCont">
+      <div class="main-heading white-bg">
+        <h1>Welcome!</h1>
         <h3>Enter your 12 digit NHS Number to get started</h3>
 
+        <!-- <div class="container">
+          <div class="form-horizontal"> -->
+
         <!--NEED A validateNHS FORM-->
-        <form action="/validateNHS" method="POST">
-          <div class="row">
-            <input type="text" id="nhsNumber" name="nhsNumber" placeholder="NHS Number" />
-            <!--Needs to submit to the database-->
-            <!-- <a href="createaccount.html"><button class="Go-Btn" type="submit" value="Go"></a> BUTTON NEEDS TO LINK TO createaccount PAGE -->
-            <a href="createaccount.html"><input type="submit" class="green-btn btn-info" value="Go" /></a>
-          </div>
-        </form>
+        <div class="flex">
+          <input type="text" id="nhsNumber" name="nhsNumber" placeholder="NHS Number" />
+          <!--Needs to submit to the database-->
+          <!-- <a href="createaccount.html"><button class="Go-Btn" type="submit" value="Go"></a> BUTTON NEEDS TO LINK TO createaccount PAGE -->
+          <a href="createaccount.html"><input type="submit" class="btn-info" value="Go" /></a>
+        </div>
       </div>
     </div>
-    <div class="col-2"></div>
   </body>
 
   <script src="/js/script.js"></script>
