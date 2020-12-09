@@ -1,17 +1,25 @@
+body{
+
+Margin: 0px;
+padding: 0px;
+
+}
+
 h1 {
-  font-size: 0.8em;
+  font-size: 1.5em;
   font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   color: #a17e8d;
 }
 
-h2 {
-  font-size: 1.8em;
+h2 
+{
+  font-size: 0.8em;
   font-family: 'Oxygen', sans-serif;
-  text-transform: uppercase;
 }
 
-h3 {
+h3 
+{
   margin-top: 10px;
   font-size: 1.5em;
   font-family: 'Quicksand', sans-serif;
@@ -76,13 +84,35 @@ p {
 .white-bg {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15%;
+  margin-top: 10%;
   justify-content: center;
   background-color: #ffffffde;
   border-radius: 20px;
   width: 550px;
   height: 450px;
 }
+
+// Small devices (landscape phones, 576px and up)
+@media screen (min-width: 576px) {
+  .white-bg, {
+    width: 250px;
+    height: 250px;
+   }
+   .main-heading {
+     font-size: 0.2em;
+   }
+  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+
 
 #nhsNumber {
   display: inline-flex;
@@ -98,17 +128,72 @@ p {
   font-size: 0.5em !important;
 }
 
-/* .green-btn {
-  margin-top: 10px;
+#email {
+  display: inline-flex;
+  justify-content: center;
+  padding: 5px;
+  padding-left: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 0.5em !important;
+}
+
+#name {
+  display: inline-flex;
+  justify-content: center;
+  padding: 5px;
+  padding-left: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 0.5em !important;
+}
+
+
+#password {
+  display: inline-flex;
+  justify-content: center;
+  padding: 5px;
+  padding-left: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 0.5em !important;
+}
+
+/* 
+#username {
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 0px;
+} */
+
+
+.green-btn {
+  margin-top: 15px;
   margin-left: auto;
   padding: 5px;
-  width: 50px;
+  width: 200px;
   background-color: #7ea292;
   color: white;
   border: 0px;
   border-radius: 10px;
-  font-size: 1em;
-} */
+  font-size: 0.5em;
+}
+
+.green-btn:hover
+{
+  background-color: #7ea292bb;
+  cursor: grab;
+}
+
 
 .btn-info {
   display: inline-block;
@@ -137,28 +222,21 @@ p {
   margin-top: 10px;
 }
 
-#email {
-  padding-left: 10px;
-  border-radius: 10px;
-  border: 0px;
+
+.required
+{
+  
+  display: inline-flex;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #F55536;
+  font-size: 1.5rem;
 }
 
-#name {
-  padding-left: 10px;
-  border-radius: 10px;
-  border: 0px;
-}
-#username {
-  padding-left: 10px;
-  border-radius: 10px;
-  border: 0px;
-}
 
-#password {
-  padding-left: 10px;
-  border-radius: 10px;
-  border: 0px;
-}
+
+
 
 .calendar-bg {
   margin-top: 20px;
@@ -198,6 +276,18 @@ p {
   border-width: 0.5px;
   border-color: #4d3b43;
 }
+
+.fc-unthemed td.fc-today {
+  border: oldlace;
+}
+
+.date-title {
+  margin-top: 100px !important;
+  display: flex;
+  justify-content: center;
+  color: #a17e8d;
+}
+
 
 .dropbtn {
   justify-content: center;
@@ -252,9 +342,7 @@ p {
   display: block;
 }
 
-body {
-  font-family: sans-serif !important;
-}
+
 
 img {
   max-width: 100%;
@@ -409,15 +497,6 @@ img {
     font-size: 1vw;
   }
 
-  /* p{
-    max-width: 60ch!important;
-    font-size: 2vw!important;
-    letter-spacing: -1.5px!important;
-  }
-  h3{
-    font-size: 3vw!important;
-    
-    /* text-transform: uppercase!important; */
   */ #messageHistory {
     padding-left: 15px;
     padding-right: 15px;
@@ -444,13 +523,3 @@ img {
   font-family: 'Quicksand', sans-serif;
 }
 
-.fc-unthemed td.fc-today {
-  border: oldlace;
-}
-
-.date-title {
-  margin-top: 100px !important;
-  display: flex;
-  justify-content: center;
-  color: #a17e8d;
-}

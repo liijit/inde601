@@ -11,22 +11,23 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Shift - Create Account</title>
   </head>
   <body class="main-bg">
-    <div class="main-heading text-center yellow-bg">
+    <div class="main-heading text-center white-bg">
       <h1>Create an Account</h1>
 
-      <div class="container mt-4 text-center">
+      <div class="container-fluid mt-4 text-center">
         <!--NEED A addTODB FORM-->
-        <form action="/addToDB" method="POST">
-          <input type="email" id="email" name="email" placeholder="Email Address" /><br /><br />
-          <input type="text" id="username" name="username" placeholder="Create a Username" /><br /><br />
-          <input type="password" id="password" name="password" placeholder="Password" /><br /><br />
+        <form action="/addToDB" method="POST" clas>
+          <input type="text" id="name" name="name" required="required" placeholder="Your Name" /><div class="required"><i class="fas fa-exclamation-triangle"></i></div><br>
+          <input type="email" id="email" name="email" required="required" placeholder="Your Email Address" /><div class="required"><i class="fas fa-exclamation-triangle"></i></div><br>
+          <input type="password" id="password" name="password" required="required" placeholder="New Password" /><div class="required"><i class="fas fa-exclamation-triangle"></i></div><br>
           <!--Needs to submit to the database-->
-          <input type="submit" class="green-btn" value="Go" />
+          <input type="submit" class="green-btn" value="Sign Up" />
           <!--BUTTON NEEDS TO LINK TO LOGIN PAGE-->
         </form>
       </div>

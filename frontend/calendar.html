@@ -25,31 +25,30 @@
       <div class="main-heading text-center">
         <h3>Get Started</h3>
         <p>Select available dates and times you are available to speak to your therapist.</p>
-      
-      <div class="btn-group">
-        <!--Add times available-->
-        <button
-          type="button"
-          onclick="timeSelector()"
-          value="date.date._d"
-          class="btn btn-secondary dropdown-toggle"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Time
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">10:00-11:00</a>
-          <a class="dropdown-item" href="#">11:00-12:00</a>
-          <a class="dropdown-item" href="#">12:00-13:00</a>
+
+        <div class="btn-group">
+          <!--Add times available-->
+          <button
+            type="button"
+            onclick="timeSelector()"
+            value="date.date._d"
+            class="btn btn-secondary dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Time
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">10:00-11:00</a>
+            <a class="dropdown-item" href="#">11:00-12:00</a>
+            <a class="dropdown-item" href="#">12:00-13:00</a>
+          </div>
+
+          <button type="button" class="btn-info" id="addDatesAndTimes" value="Add">Add</button>
         </div>
-
-        <button type="button" class="btn-info" id="addDatesAndTimes" value="Add">Add</button>
       </div>
-      </div>
-      </div>
-
+    </div>
 
     <!--Calendar-->
     <div id="calendar" class="calendar mb-5"></div>
