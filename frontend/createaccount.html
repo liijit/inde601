@@ -17,30 +17,29 @@
   </head>
   <body class="main-bg">
     <div class="main-heading text-center yellow-bg">
-      <h1>Create an Account</h1>
+      <h2>Create an Account</h2>
 
       <div class="container mt-4 text-center">
         <!--NEED A addTODB FORM-->
-        <form action="/addToDB" method="POST">
+        <form>
+          <input type="text" id="name" name="name" placeholder="Name" /><br /><br />
           <input type="email" id="email" name="email" placeholder="Email Address" /><br /><br />
-          <input type="text" id="username" name="username" placeholder="Create a Username" /><br /><br />
           <input type="password" id="password" name="password" placeholder="Password" /><br /><br />
           <!--Needs to submit to the database-->
+        <div id="resContainer">
+          <p id="resMessage"></p>
+        </div>
           <input type="submit" class="green-btn" value="Go" />
           <!--BUTTON NEEDS TO LINK TO LOGIN PAGE-->
         </form>
-      </div>
-      <!-- <div class="text-center">
 
-                <button type="button" class="green-btn">Add</button>
-            </div>
-        -->
+      </div>
     </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="library/picker.js"></script>
   <script src="library/picker.date.js"></script>
-
   <script src="library/picker.time.js"></script>
-  <script src="../frontend/js/script.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../frontend/js/formPost.js"></script>
 </html>
