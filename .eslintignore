@@ -2,3 +2,4 @@ node_modules
 ts-pile
 .env
 environment.d.ts
+frontend/js

@@ -8,12 +8,13 @@
   "license": "ISC",
   "dependencies": {
     "@typegoose/typegoose": "^7.4.5",
+    "axios": "^0.21.0",
     "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mongoose": "^5.10.18",
-    "package.json": "^2.0.1",
+    "package-json": "^6.5.0",
     "path": "^0.12.7",
     "socket.io": "^3.0.3",
     "validator": "^13.5.1"
@@ -40,10 +41,10 @@
     "typescript": "^4.1.2"
   },
   "scripts": {
-    "lint": "eslint \"src\" --ext .ts --fix",
-    "prettier-css": "cd frontend/css && prettier --find-config-path -w *.css",
-    "prettier-html": "cd frontend && prettier --find-config-path -w *.html",
-    "prettier-err": "prettier --find-config-path -w ./frontend/css/*.css",
+    "lint": "eslint \"src\" --ext --fix",
+    "prettier-css": "cd frontend/css && prettier --find-config-path -w",
+    "prettier-html": "cd frontend && prettier --find-config-path -w",
+    "prettier-err": "prettier --find-config-path -w ./frontend/css/",
     "dev": "tsc && nodemon -r dotenv/config src/app.ts && nodemon --watch 'src/**'",
     "html": "browser-sync start --server --files '*.html, css/*.css'",
     "dev-typescript-w": "tsnd --respawn src/app.ts --watch src/*.ts",
@@ -53,22 +54,19 @@
     "fsevents": "*"
   },
   "lint-staged": {
-    "frontend/css/*.css": [
-      "prettier --find-config-path -w",
-      "git add"
+    "*.css": [
+      "npm run prettier-css", "git add"
     ],
-    "frontend/*/html": [
-      "prettier --find-config-path -w",
-      "git add"
+    "*.html": [
+      "npm run prettier-html", "git add"
     ],
-    "src/*.ts": [
-      "eslint . --fix",
-      "git add"
+    "*.ts": [
+      "npm run lint", "git add"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run prettier-css && npm run prettier-html"
+      "pre-commit": "lint-staged"
     }
   }
 }
