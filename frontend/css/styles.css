@@ -1,8 +1,6 @@
-body{
-
-Margin: 0px;
-padding: 0px;
-
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
@@ -12,16 +10,17 @@ h1 {
   color: #a17e8d;
 }
 
-h2 
-{
+h2 {
   font-size: 0.8em;
   font-family: 'Oxygen', sans-serif;
 }
 
-h3 
-{
+h3 {
   margin-top: 10px;
   font-size: 1.5em;
+
+  margin: 10px;
+
   font-family: 'Quicksand', sans-serif;
   font-weight: lighter;
   /* font-family: 'Quicksand', sans-serif; */
@@ -94,25 +93,29 @@ p {
 
 // Small devices (landscape phones, 576px and up)
 @media screen (min-width: 576px) {
-  .white-bg, {
+  .white-bg {
     width: 250px;
     height: 250px;
-   }
-   .main-heading {
-     font-size: 0.2em;
-   }
   }
+  .main-heading {
+    font-size: 0.2em;
+  }
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+  ...;
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+  ...;
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-
+@media (min-width: 1200px) {
+  ...;
+}
 
 #nhsNumber {
   display: inline-flex;
@@ -154,7 +157,6 @@ p {
   font-size: 0.5em !important;
 }
 
-
 #password {
   display: inline-flex;
   justify-content: center;
@@ -175,7 +177,6 @@ p {
   border: 0px;
 } */
 
-
 .green-btn {
   margin-top: 15px;
   margin-left: auto;
@@ -188,12 +189,10 @@ p {
   font-size: 0.5em;
 }
 
-.green-btn:hover
-{
+.green-btn:hover {
   background-color: #7ea292bb;
   cursor: grab;
 }
-
 
 .btn-info {
   display: inline-block;
@@ -205,11 +204,23 @@ p {
   color: white;
   border: 0px;
   border-radius: 10px;
-  font-size: 0.5em;
+  font-size: 1em;
 }
-
 .btn-info:hover {
   background-color: #7ea292c5;
+}
+.btn-sendMes {
+  padding: 5px;
+  width: 100px;
+  background-color: #7ea292;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 1em;
+}
+.btn-sendMes:hover {
+  background-color: #7ea292c5;
+  cursor: grab;
 }
 
 .nhs-btn:hover {
@@ -222,21 +233,14 @@ p {
   margin-top: 10px;
 }
 
-
-.required
-{
-  
+.required {
   display: inline-flex;
   position: relative;
   margin-left: 10px;
   margin-top: 5px;
-  color: #F55536;
+  color: #f55536;
   font-size: 1.5rem;
 }
-
-
-
-
 
 .calendar-bg {
   margin-top: 20px;
@@ -287,7 +291,6 @@ p {
   justify-content: center;
   color: #a17e8d;
 }
-
 
 .dropbtn {
   justify-content: center;
@@ -342,8 +345,6 @@ p {
   display: block;
 }
 
-
-
 img {
   max-width: 100%;
 }
@@ -377,13 +378,24 @@ img {
 #responseName {
   width: 100%;
   text-align: center;
+  font-size: 3vw;
+}
+#responseName span {
+  padding: 10px;
+  /* border-radius: 5px; */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
 }
 
+#responseNameContainer {
+  padding: 20px;
+}
 #chatContainer {
   padding: 10px;
   /* background: #000; */
   /* background: rgba(247, 205, 96, 0.5); correct */
-  background: white;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
   /* color: #000; */
 
   /* align-content: center!important; */
@@ -415,12 +427,14 @@ img {
   background: #90b0c6;
   border-radius: 4px;
   float: right;
+  padding: 10px;
   max-width: 50%;
 }
 #innerContainerTher {
   background: #f6cc5d;
   border-radius: 4px;
   float: left;
+  padding: 10px;
   max-width: 50%;
 }
 #responseText {
@@ -461,19 +475,31 @@ img {
   width: 100%;
   padding: 10px 0px 10px 0px;
   text-align: left;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
 }
+
 #messageBoxContainer {
   width: 100%;
 }
 #typeMessageBox {
   height: 5vh;
-  width: 80%;
+  width: 100%;
   text-align: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 5px;
 }
-#sendMessageToOther {
-  width: 20%;
-  position: absolute;
-  margin: 0;
+
+#typeMessageBox:focus {
+  outline: none !important;
+}
+
+#sendButtonContainer {
+  justify-content: center;
+  display: flex;
 }
 
 @media screen and (min-width: 320px) {
@@ -522,4 +548,3 @@ img {
   font-size: 16px;
   font-family: 'Quicksand', sans-serif;
 }
-
