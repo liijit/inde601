@@ -26,3 +26,45 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+//Change Font Sizes accoring to buttons 
+  function smallerH1() {
+    document.getElementById("fontH1").style.fontSize = "1.2em";
+  }
+
+  function largerH1() {
+    document.getElementById("fontH1").style.fontSize = "1.8em";
+  }
+
+  function normalH1() {
+    document.getElementById("fontH1").style.fontSize = "1.5em";
+  }
+
+
+  function smallerH2() {
+    document.getElementById("fontH2").style.fontSize = "0.8em";
+  }
+
+  function largerH2() {
+    document.getElementById("fontH2").style.fontSize = "1.4em";
+  }
+
+  function normalH2() {
+    document.getElementById("fontH2").style.fontSize = "1.2em";
+  }
+
+
+  function smallerp() {
+    document.getElementById("fontp").style.fontSize = "0.6em";
+  }
+
+  function largerp() {
+    document.getElementById("fontp").style.fontSize = "1em";
+  }
+
+
+  function normalp() {
+    document.getElementById("fontp").style.fontSize = "0.8em";
+  }
+

@@ -11,29 +11,24 @@ h1 {
 }
 
 h2 {
-  font-size: 0.8em;
+  font-size: 1.2em;
   font-family: 'Oxygen', sans-serif;
 }
 
 h3 {
-  margin-top: 10px;
-  font-size: 1.5em;
-
-  margin: 10px;
-
+  font-size: 1em;
   font-family: 'Quicksand', sans-serif;
   font-weight: lighter;
   /* font-family: 'Quicksand', sans-serif; */
 }
 
-h4 {
-  font-size: 1.4em;
+p {
+  font-size: 0.8em;
+  letter-spacing: 0.5px;
+  font-family: 'Quicksand', sans-serif;
 }
 
-p {
-  font-size: 0.6em;
-  letter-spacing: 0.5px;
-}
+/* // START OF ETHAN CSS // */
 
 .img {
   display: flex;
@@ -53,9 +48,10 @@ p {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  justify-content: center;
-  color: whitesmoke;
+  font-size: 2em;
+  /* display: flex;
+  justify-content: center; */
+  color: #4c4c4c;
 }
 
 .main-bg {
@@ -66,6 +62,14 @@ p {
 
 .touch-cursor {
   cursor: url('../assets/touch-cursor.png'), auto;
+}
+
+.main-heading {
+  margin-top: 20px;
+  padding: 40px;
+  justify-content: center;
+  color: #a17e8d;
+  font-size: 2em;
 }
 
 .main-heading {
@@ -113,14 +117,16 @@ p {
   height: 450px;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media screen (min-width: 576px) {
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 600px) {
   .white-bg {
-    width: 250px;
-    height: 250px;
+    margin: 20px;
+    width: auto;
+    height: auto;
   }
   .main-heading {
     font-size: 0.2em;
+    width: 100px;
   }
 }
 
@@ -148,7 +154,7 @@ p {
   width: 200px;
   border-radius: 10px;
   border: 0px;
-  font-size: 0.5em !important;
+  font-size: 0.4em !important;
 }
 
 #name {
@@ -161,7 +167,7 @@ p {
   width: 200px;
   border-radius: 10px;
   border: 0px;
-  font-size: 0.5em !important;
+  font-size: 0.4em !important;
 }
 
 #password {
@@ -174,7 +180,7 @@ p {
   width: 200px;
   border-radius: 10px;
   border: 0px;
-  font-size: 0.5em !important;
+  font-size: 0.4em !important;
 }
 
 /* 
@@ -211,11 +217,60 @@ p {
   color: white;
   border: 0px;
   border-radius: 10px;
-  font-size: 1em;
+  font-size: 0.5em;
 }
 .btn-info:hover {
   background-color: #7ea292c5;
 }
+
+.settings-bg {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  padding-bottom: 20px;
+  justify-content: center;
+  background-color: #ffffffde;
+  border-radius: 20px;
+  width: 550px;
+  height: auto;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 600px) {
+  .settings-bg {
+    margin: 20px;
+    width: 250px;
+    height: auto;
+    justify-content: center;
+  }
+}
+
+.bi-arrow-bar-right {
+  fill: #e45b32;
+}
+
+.settings-h {
+  margin-top: 15px;
+  font-size: 2.5em;
+  color: #e45b32 !important;
+  text-align: center;
+}
+
+.btn-font {
+  margin-left: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  padding-right: 2px;
+  width: auto;
+  background-color: #7ea292;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+
+/* // END OF ETHAN CSS // */
+
 .btn-sendMes {
   padding: 5px;
   width: 100px;
@@ -543,15 +598,17 @@ img {
   /* border-radius: 5px; correct */
   color: white;
   font-family: 'Oxygen', sans-serif;
-  height: 500px;
+  height: 600px;
   padding-left: 0px;
   padding-right: 0px;
   overflow-y: scroll;
   /* max-width: 75ch; */
+  border-radius: 20px;
 }
 
 #faqContainer p {
   /* max-width: 50ch; */
   font-size: 16px;
   font-family: 'Quicksand', sans-serif;
+  padding-top: 15px;
 }

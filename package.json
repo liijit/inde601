@@ -10,6 +10,7 @@
     "@typegoose/typegoose": "^7.4.5",
     "axios": "^0.21.0",
     "bcrypt": "^5.0.0",
+    "bootstrap-icons": "^1.1.0",
     "cors": "^2.8.5",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
@@ -55,13 +56,16 @@
   },
   "lint-staged": {
     "*.css": [
-      "npm run prettier-css", "git add"
+      "npm run prettier-css",
+      "git add"
     ],
     "*.html": [
-      "npm run prettier-html", "git add"
+      "npm run prettier-html",
+      "git add"
     ],
     "*.ts": [
-      "npm run lint", "git add"
+      "npm run lint",
+      "git add"
     ]
   },
   "husky": {
