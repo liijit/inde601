@@ -79,7 +79,26 @@ p {
 .main-heading p {
   text-align: left;
 }
-
+#landingJumbo {
+  width: 50vw;
+  margin: 10px auto;
+  background-color: #ffffff;
+  padding: 40px !important;
+  justify-content: center;
+  align-content: center;
+  color: #a17e8d;
+  font-size: 2em;
+  border-radius: 25px;
+}
+#logo {
+  width: 20%;
+}
+#jumboCont {
+  position: relative;
+}
+#jumboCont img {
+  float: left;
+}
 .white-bg {
   margin-left: auto;
   margin-right: auto;
@@ -91,8 +110,8 @@ p {
   height: 450px;
 }
 
-// Small devices (landscape phones, 576px and up)
-@media screen (min-width: 576px) {
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
   .white-bg {
     width: 250px;
     height: 250px;
@@ -100,21 +119,6 @@ p {
   .main-heading {
     font-size: 0.2em;
   }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  ...;
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  ...;
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  ...;
 }
 
 #nhsNumber {

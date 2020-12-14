@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -13,28 +14,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
+
     <title>Shift - Chat</title>
   </head>
   <body class="main-bg">
     <!-- create an id that links to database -->
+
     <!-- <img id="myBackgroundImage"src="assets/background.png"> -->
+
     <div class="container" id="responseNameContainer">
       <h1 id="responseName"><span>Angela Erhoin</span></h1>
     </div>
     <div class="row">
-      <div class="col-1"></div>
-      <div class="container col-10" id="chatContainer">
+      <div class="col-lg-2 col-sm-1"></div>
+
+      <div class="container col-lg-8 col-sm-10" id="chatContainer">
         <div class="container" id="messageHistory">
           <div class="container" id="responseMsg">
             <div id="innerContainerTher">
               <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
             </div>
           </div>
+
           <div class="container" id="userMsg">
             <div id="innerContainerUser">
               <p id="userText">hi angela am addicted to drugs and i dont know what to do so can you help me out pls</p>
             </div>
           </div>
+
+          <div class="container" id="responseMsg">
+            <div id="innerContainerTher">
+              <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
+            </div>
+          </div>
+
+          <div class="container" id="userMsg">
+            <div id="innerContainerUser">
+              <p id="userText">hi angela am addicted to drugs and i dont know what to do so can you help me out pls</p>
+            </div>
+          </div>
+
           <div class="container" id="responseMsg">
             <div id="innerContainerTher">
               <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
@@ -45,6 +64,7 @@
               <p id="userText">hi angela am addicted to drugs and i dont know what to do so can you help me out pls</p>
             </div>
           </div>
+
           <div class="container" id="responseMsg">
             <div id="innerContainerTher">
               <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
@@ -55,16 +75,7 @@
               <p id="userText">hi angela am addicted to drugs and i dont know what to do so can you help me out pls</p>
             </div>
           </div>
-          <div class="container" id="responseMsg">
-            <div id="innerContainerTher">
-              <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
-            </div>
-          </div>
-          <div class="container" id="userMsg">
-            <div id="innerContainerUser">
-              <p id="userText">hi angela am addicted to drugs and i dont know what to do so can you help me out pls</p>
-            </div>
-          </div>
+
           <div class="container" id="responseMsg">
             <div id="innerContainerTher">
               <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
@@ -72,17 +83,20 @@
           </div>
         </div>
       </div>
-      <div class="col-1"></div>
+
+      <div class="col-lg-2 col-sm-1"></div>
     </div>
     <div class="row">
-      <div class="col-1"></div>
-      <div class="flex col-10" id="typeMessageContainer">
+      <div class="col-lg-2 col-sm-1"></div>
+      <div class="flex col-lg-8 col-sm-10" id="typeMessageContainer">
+        <!-- <div class="container" id="messageBoxContainer"> -->
         <textarea id="typeMessageBox" placeholder="Type Message..."></textarea>
         <div id="sendButtonContainer">
           <input type="submit" class="btn-sendMes" id="sendMessageToOther" value="Send" />
+          <!-- </div> -->
         </div>
       </div>
-      <div class="col-1"></div>
+      <div class="col-lg-2 col-sm-1"></div>
     </div>
   </body>
   <script
@@ -100,8 +114,11 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
   <script src="library/picker.js"></script>
   <script src="library/picker.date.js"></script>
   <script src="library/picker.time.js"></script>
