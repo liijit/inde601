@@ -1,0 +1,614 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 500;
+  color: #a17e8d;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-family: 'Oxygen', sans-serif;
+}
+
+h3 {
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: lighter;
+  /* font-family: 'Quicksand', sans-serif; */
+}
+
+p {
+  font-size: 0.8em;
+  letter-spacing: 0.5px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* // START OF ETHAN CSS // */
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-overlay:hover {
+  opacity: 0.8;
+}
+
+.mt {
+  margin-top: 40px;
+}
+
+.heading-text {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  /* display: flex;
+  justify-content: center; */
+  color: #4c4c4c;
+}
+
+.main-bg {
+  background-image: url('../assets/bkg2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.touch-cursor {
+  cursor: url('../assets/touch-cursor.png'), auto;
+}
+
+.main-heading {
+  margin-top: 20px;
+  padding: 40px;
+  justify-content: center;
+  color: #a17e8d;
+  font-size: 2em;
+}
+
+.main-heading {
+  margin-top: 20px;
+  padding: 40px;
+  justify-content: center;
+  color: #a17e8d;
+  font-size: 2em;
+}
+
+.main-heading p {
+  text-align: left;
+}
+
+#landingJumbo {
+  width: 50vw;
+  margin: 10px auto;
+  background-color: #ffffff;
+  padding: 40px !important;
+  justify-content: center;
+  align-content: center;
+  color: #a17e8d;
+  font-size: 2em;
+  border-radius: 25px;
+}
+
+#logo {
+  width: 20%;
+}
+#jumboCont {
+  position: relative;
+}
+#jumboCont img {
+  float: left;
+}
+
+.white-bg {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  justify-content: center;
+  background-color: #ffffffde;
+  border-radius: 20px;
+  width: 550px;
+  height: 450px;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 600px) {
+  .white-bg {
+    margin: 20px;
+    width: auto;
+    height: auto;
+  }
+  .main-heading {
+    font-size: 0.2em;
+    width: 100px;
+  }
+}
+
+#nhsNumber {
+  display: inline-flex;
+  justify-content: center;
+  padding: 5px;
+  padding-left: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 10px;
+  border: 0px;
+  margin-top: 20px;
+  font-size: 0.5em !important;
+}
+
+#email {
+  display: inline-flex;
+  justify-content: center;
+  padding: 5px;
+  padding-left: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 0.4em !important;
+}
+
+#name {
+  display: inline-flex;
+  justify-content: center;
+  padding: 5px;
+  padding-left: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 0.4em !important;
+}
+
+#password {
+  display: inline-flex;
+  justify-content: center;
+  padding: 5px;
+  padding-left: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 0.4em !important;
+}
+
+/* 
+#username {
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 0px;
+} */
+
+.green-btn {
+  margin-top: 15px;
+  margin-left: auto;
+  padding: 5px;
+  width: 200px;
+  background-color: #7ea292;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 0.5em;
+}
+
+.green-btn:hover {
+  background-color: #7ea292bb;
+  cursor: grab;
+}
+
+.btn-info {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 50px;
+  background-color: #7ea292;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 0.5em;
+}
+.btn-info:hover {
+  background-color: #7ea292c5;
+}
+
+.settings-bg {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  padding-bottom: 20px;
+  justify-content: center;
+  background-color: #ffffffde;
+  border-radius: 20px;
+  width: 550px;
+  height: auto;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 600px) {
+  .settings-bg {
+    margin: 20px;
+    width: 250px;
+    height: auto;
+    justify-content: center;
+  }
+}
+
+.bi-arrow-bar-right {
+  fill: #e45b32;
+}
+
+.settings-h {
+  margin-top: 15px;
+  font-size: 2.5em;
+  color: #e45b32 !important;
+  text-align: center;
+}
+
+.btn-font {
+  margin-left: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  padding-right: 2px;
+  width: auto;
+  background-color: #7ea292;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+
+/* // END OF ETHAN CSS // */
+
+.btn-sendMes {
+  padding: 5px;
+  width: 100px;
+  background-color: #7ea292;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 1em;
+}
+.btn-sendMes:hover {
+  background-color: #7ea292c5;
+  cursor: grab;
+}
+
+.nhs-btn:hover {
+  background-color: rgb(126, 162, 146, 0.8);
+  text-decoration: none;
+}
+
+.btn-secondary {
+  height: 35px;
+  margin-top: 10px;
+}
+
+.required {
+  display: inline-flex;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #f55536;
+  font-size: 1.5rem;
+}
+
+.calendar-bg {
+  margin-top: 20px;
+  background-color: #ffffffde;
+  border-radius: 20px;
+  width: 500px;
+}
+
+.calendar {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  padding-top: 15px;
+  height: 658px;
+  width: 750px;
+  background-color: #a17e8d;
+  border-radius: 20px;
+  font-size: 1em;
+  font-family: 'Oxygen', sans-serif !important;
+  color: white;
+}
+
+.fc-unthemed td.fc-today {
+  background-color: #90b0c644 !important;
+  border: 1px;
+}
+
+.fc td {
+  border-style: dashed;
+  border-width: 0.5px;
+  border-color: #4d3b43;
+}
+
+.fc th {
+  border-style: dashed;
+  border-width: 0.5px;
+  border-color: #4d3b43;
+}
+
+.fc-unthemed td.fc-today {
+  border: oldlace;
+}
+
+.date-title {
+  margin-top: 100px !important;
+  display: flex;
+  justify-content: center;
+  color: #a17e8d;
+}
+
+.dropbtn {
+  justify-content: center;
+  background-color: #90b0c6;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #90b0c6;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  margin-top: 20px;
+  display: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+
+  width: 80px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+.inbox_msg {
+  border: 1px solid #c4c4c4;
+  clear: both;
+  overflow: hidden;
+  padding: 20px;
+}
+.top_spac {
+  margin: 20px 0 0;
+}
+
+.recent_heading {
+  float: left;
+  width: 40%;
+}
+
+.headind_srch {
+  padding: 10px 29px 10px 20px;
+  overflow: hidden;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.recent_heading h4 {
+  color: #f6cc5d;
+  font-size: 21px;
+  margin: auto;
+}
+
+#responseName {
+  width: 100%;
+  text-align: center;
+  font-size: 3vw;
+}
+#responseName span {
+  padding: 10px;
+  /* border-radius: 5px; */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+#responseNameContainer {
+  padding: 20px;
+}
+#chatContainer {
+  padding: 10px;
+  /* background: #000; */
+  /* background: rgba(247, 205, 96, 0.5); correct */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  /* color: #000; */
+
+  /* align-content: center!important; */
+  /* align-items: center!important; */
+}
+#responseMsg {
+  overflow: hidden;
+  margin: 26px 0 26px;
+
+  /* display: inline-block; */
+  /* padding: 10px; */
+  vertical-align: top;
+  width: 100%;
+}
+#userMsg {
+  overflow: hidden;
+  margin: 26px 0 26px;
+
+  /* display: inline-block; */
+  padding: 10px;
+  /* overflow:hidden; 
+        margin:26px 0 26px; */
+  /* display: inline-block; */
+  vertical-align: top;
+  width: 100%;
+}
+
+#innerContainerUser {
+  background: #90b0c6;
+  border-radius: 4px;
+  float: right;
+  padding: 10px;
+  max-width: 50%;
+}
+#innerContainerTher {
+  background: #f6cc5d;
+  border-radius: 4px;
+  float: left;
+  padding: 10px;
+  max-width: 50%;
+}
+#responseText {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #f5f5f5;
+
+  font-size: 1vw;
+  min-height: 48px;
+  width: 100%;
+  font-family: 'Oxygen', sans-serif !important;
+  font-style: normal;
+  font-weight: 100;
+  max-width: 60ch;
+}
+#userText {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #f5f5f5;
+
+  font-size: 1vw;
+  min-height: 48px;
+  width: 100%;
+  font-family: 'Oxygen', sans-serif !important;
+  font-style: normal;
+  font-weight: 100;
+  max-width: 50ch;
+}
+
+#innerContainer {
+  width: 60%;
+  height: auto;
+  margin: 0;
+  padding: 5px;
+}
+
+#typeMessageContainer {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  text-align: left;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+#messageBoxContainer {
+  width: 100%;
+}
+#typeMessageBox {
+  height: 5vh;
+  width: 100%;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 5px;
+}
+
+#typeMessageBox:focus {
+  outline: none !important;
+}
+
+#sendButtonContainer {
+  justify-content: center;
+  display: flex;
+}
+
+@media screen and (min-width: 320px) {
+  #userText,
+  #responseText {
+    font-size: 3vw;
+    max-width: 60ch;
+  }
+  #messageHistory {
+    height: 500px;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow-y: scroll;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (min-width: 768px) {
+  #userText,
+  #responseText {
+    font-size: 1vw;
+  }
+
+  */ #messageHistory {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+#faqContainer {
+  /* padding: 10px; */
+  /* background: #000; */
+  background: rgba(126, 161, 144, 0.8);
+  /* border-radius: 5px; correct */
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  height: 600px;
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow-y: scroll;
+  /* max-width: 75ch; */
+  border-radius: 20px;
+}
+
+#faqContainer p {
+  /* max-width: 50ch; */
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 15px;
+}
