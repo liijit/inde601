@@ -1,5 +1,5 @@
 //initialising calendar
-var timeDropDown = document.getElementById('myDIV').innerHTML;
+// var timeDropDown = document.getElementById('myDIV').innerHTML;
 $('#calendar').fullCalendar({
   firstDay: 1, //setting first day to monday instead of default 0, sunday
   dayClick: function(date, jsEvent, view) {
@@ -17,7 +17,7 @@ function timeSelector() {
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
+    let i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
@@ -68,3 +68,32 @@ window.onclick = function(event) {
     document.getElementById("fontp").style.fontSize = "0.8em";
   }
 
+//load all elements with "accordion" element
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  //apply addeventlistener to each element
+  acc[i].addEventListener("click", function() {
+    //set toggle active flag
+    this.classList.toggle("active");
+    for (let ele of acc) {
+    	if (ele.nextElementSibling.style.display) {
+        //if current element active, set the previous element to none
+        	ele.nextElementSibling.style.display = "none";
+        }
+    }
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === 'block') {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block"
+      console.log(this.classList.toggle)
+
+      if (this.classList.toggle === "active") {
+        this.classList.toggle("active")
+      }
+    } 
+  });
+}
