@@ -51,7 +51,7 @@
     "prettier-html": "cd frontend && prettier --find-config-path -w *.html",
     "prettier-html:hook": "cd frontend && prettier --find-config-path -w",
     "dev": "tsc && nodemon -r dotenv/config src/app.ts && nodemon --watch 'src/**'",
-    "html": "browser-sync start -s 'frontend' --files --startPath '/frontend' --directory",
+    "html": "browser-sync start -s --startPath '/frontend' --directory",
     "dev-typescript-w": "tsnd --respawn src/app.ts --watch src/*.ts",
     "prod": "tsc && node ts-pile/app.js"
   },
