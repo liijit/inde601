@@ -1,7 +1,14 @@
 body {
   margin: 0px;
   padding: 0px;
+  background: url('../assets/bkg2.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  
 }
+
 
 h1 {
   font-size: 1.5em;
@@ -54,11 +61,7 @@ p {
   color: #a17e8d;
 }
 
-.main-bg {
-  background-image: url('../assets/bkg2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 
 .main-heading {
   margin-top: 20px;
@@ -68,13 +71,6 @@ p {
   font-size: 2em;
 }
 
-.main-heading {
-  margin-top: 20px;
-  padding: 40px;
-  justify-content: center;
-  color: #a17e8d;
-  font-size: 2em;
-}
 
 .main-heading p {
   text-align: left;
@@ -96,12 +92,20 @@ p {
   .white-bg {
     padding-bottom: 20px;
     margin: 20px;
-    width: auto;
+    margin-left: auto;
+  margin-right: auto;
     height: auto;
+    margin-top: 25%;
+    width: 300px;
   }
   .main-heading {
-    font-size: 0.2em;
-    width: 100px;
+
+    margin-top: 20%;
+    font-size: 1em;
+  }
+  .main-heading p {
+    margin-top: 10px;
+    text-align: left;
   }
 }
 
@@ -158,17 +162,64 @@ p {
   font-size: 0.4em !important;
 }
 
-/* 
-#username {
-  padding-left: 10px;
-  border-radius: 10px;
-  border: 0px;
-} */
+
+/* // Small devices (landscape phones, 500px and up) */
+@media screen and (max-width: 500px) { 
+  
+ 
+
+   #name {
+     
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 0.6em !important;
+
+   }
+
+  #email {
+
+    margin-top: 10px;
+      width: 150px;
+      border-radius: 10px;
+      border: 0px;
+      font-size: 0.6em !important;
+  
+     }
+
+     #password {
+  
+      margin-top: 10px;
+      width: 150px;
+      border-radius: 10px;
+      border: 0px;
+      font-size: 0.6em !important;
+  
+     }
+
+     .fa-exclamation-triangle
+    {
+   
+    font-size: 15px;
+
+    }
+
+    .green-btn
+     {
+
+      width: 180px !important;
+
+
+     }
+
+  }
+
+
 
 .btn-drop {
   display: inline-block;
   margin-top: 10px;
-  padding: 5px;
   width: auto;
   background-color: #91b0c6;
   color: white;
@@ -184,21 +235,22 @@ p {
   .btn-drop {
     font-size: 10px;
   }
-}
 
 .btn-add {
-  display: inline-block;
+
   margin-top: 10px;
-  padding: 5px;
   width: auto;
   background-color: #7ea292;
   color: white;
-  border: 10px;
-  font-size: 0.5em;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 10px;
 }
 .btn-add {
   background-color: #7ea292c5;
+ }
 }
+
 
 .green-btn {
   margin-top: 15px;
@@ -266,6 +318,7 @@ p {
   font-size: 2.5em;
   color: #e45b32 !important;
   text-align: center;
+
 }
 
 /* // Small devices (landscape phones, 500px and up) */
@@ -274,7 +327,7 @@ p {
     margin: 40px;
     margin-top: 50px;
     padding-top: 20px;
-    font-size: 1.2em;
+    font-size: 1.6em;
   }
 }
 
@@ -306,18 +359,19 @@ p {
 }
 
 .calendar-bg {
-  margin-top: 20px;
+  margin-top: 25px;
   background-color: #ffffffde;
   border-radius: 20px;
   width: 500px;
 }
 
-/* // Small devices (landscape phones, 576px and up) */
-@media screen and (max-width: 600px) {
+/* // Small devices (landscape phones, 500px and up) */
+@media screen and (max-width: 500px) {
   .calendar-bg {
-    width: 250px;
+    width: 300px;
     height: auto;
     justify-content: center;
+    margin-top: 50px;
   }
   .calendar-bg p {
     padding-top: 10px;
@@ -335,7 +389,8 @@ p {
   }
 
   .btn-add {
-    font-size: 1.5em;
+    font-size: 1.2em;
+
   }
 }
 
@@ -358,9 +413,12 @@ p {
 @media screen and (max-width: 500px) {
   .calendar {
     height: auto;
-    width: auto;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     padding: 10px;
-    margin: 10px;
+
   }
   .fc td {
     height: fit-content;

@@ -17,7 +17,9 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
+    project: './tsconfig.json',
+    tsconfigRootDir: __dirname,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
