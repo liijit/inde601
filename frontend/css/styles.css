@@ -458,7 +458,7 @@ p {
   cursor: grab;
 }
 
-. .date-title {
+.date-title {
   margin-top: 100px !important;
   display: flex;
   justify-content: center;
