@@ -440,6 +440,11 @@ width: 40px;
 
 }
 
+.nav-icon:hover {
+  transform: scale(1.2);
+
+}
+
 
 .dropdown-menu {
   border-radius: 10px;
@@ -792,6 +797,7 @@ img {
   height: 600px;
   padding-left: 0px;
   padding-right: 0px;
+  margin-bottom: 40px;
 
   /* max-width: 75ch; */
   border-radius: 20px;
