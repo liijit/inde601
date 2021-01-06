@@ -36,6 +36,19 @@ p {
   font-family: 'Quicksand', sans-serif;
 }
 
+
+a 
+{
+ 
+  color: #a17e8d;
+}
+
+a:hover
+{
+ 
+  color: #a17e8d91;
+
+}
 /* // START OF ETHAN CSS // */
 
 .img {
@@ -62,9 +75,7 @@ p {
   color: #a17e8d;
 }
 
-.touch-cursor {
-  cursor: url('../assets/touch-cursor.png'), auto;
-}
+
 
 .main-heading {
   margin-top: 20px;
@@ -92,16 +103,16 @@ p {
 /* // Small devices (landscape phones, 500px and up) */
 @media screen and (max-width: 500px) {
   .white-bg {
+    margin-top: 80px;
     padding-bottom: 20px;
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    margin-top: 25%;
     width: 300px;
   }
   .main-heading {
-    margin-top: 20%;
+    margin-top: 40%;
     font-size: 1em;
   }
   .main-heading p {
@@ -231,6 +242,15 @@ p {
   }
 }
 
+
+.navbar-bottom
+{
+
+color: #4d3b43;
+
+
+}
+
 .green-btn {
   margin-top: 15px;
   margin-left: auto;
@@ -327,7 +347,7 @@ p {
   text-decoration: none;
 }
 
-.required {
+.required { 
   display: inline-flex;
   position: relative;
   margin-left: 10px;
@@ -404,6 +424,22 @@ p {
     display: inline;
   }
 }
+
+.navbar {
+
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 0px;
+  padding: 10px;
+}
+
+
+.nav-icon 
+{
+
+width: 40px;
+
+}
+
 
 .dropdown-menu {
   border-radius: 10px;
@@ -769,4 +805,12 @@ img {
 }
 #logContLand {
   float: right;
+}
+
+
+.fixed-bottom {
+
+  right: 85%;
+
+
 }
