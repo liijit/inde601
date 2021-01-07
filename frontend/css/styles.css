@@ -36,18 +36,12 @@ p {
   font-family: 'Quicksand', sans-serif;
 }
 
-
-a 
-{
- 
+a {
   color: #a17e8d;
 }
 
-a:hover
-{
- 
+a:hover {
   color: #a17e8d91;
-
 }
 /* // START OF ETHAN CSS // */
 
@@ -74,8 +68,6 @@ a:hover
   justify-content: center; */
   color: #a17e8d;
 }
-
-
 
 .main-heading {
   margin-top: 20px;
@@ -242,13 +234,8 @@ a:hover
   }
 }
 
-
-.navbar-bottom
-{
-
-color: #4d3b43;
-
-
+.navbar-bottom {
+  color: #4d3b43;
 }
 
 .green-btn {
@@ -347,7 +334,7 @@ color: #4d3b43;
   text-decoration: none;
 }
 
-.required { 
+.required {
   display: inline-flex;
   position: relative;
   margin-left: 10px;
@@ -426,25 +413,18 @@ color: #4d3b43;
 }
 
 .navbar {
-
   border-top-right-radius: 40px;
   border-bottom-left-radius: 0px;
   padding: 10px;
 }
 
-
-.nav-icon 
-{
-
-width: 40px;
-
+.nav-icon {
+  width: 40px;
 }
 
 .nav-icon:hover {
   transform: scale(1.2);
-
 }
-
 
 .dropdown-menu {
   border-radius: 10px;
@@ -813,10 +793,11 @@ img {
   float: right;
 }
 
+.btn.btn-link {
+  white-space: initial;
+  text-align: left;
+}
 
 .fixed-bottom {
-
   right: 85%;
-
-
 }
