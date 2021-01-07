@@ -45,6 +45,17 @@ a:hover {
 }
 /* // START OF ETHAN CSS // */
 
+#creAcLink {
+  font-size: 0.5em;
+  letter-spacing: 0px;
+  text-align: center;
+}
+#creAcA {
+  color: #a17e8d;
+}
+#creAcA:hover {
+  text-decoration: underline;
+}
 .img {
   display: flex;
   align-items: center;
@@ -66,7 +77,7 @@ a:hover {
   font-size: 2em;
   /* display: flex;
   justify-content: center; */
-  color: #a17e8d;
+  color: #4c4c4c;
 }
 
 .main-heading {
@@ -81,6 +92,74 @@ a:hover {
   text-align: left;
 }
 
+#logo1 {
+  width: 30%;
+}
+#landingJumbo {
+  /* float:left; */
+  display: flex;
+  width: 60vw;
+  height: 60vh;
+  padding: 10px;
+  /* margin: 120px auto; */
+  background-color: rgba(189, 147, 145, 1);
+  margin-top: 10vw !important;
+  /* padding: 40px !important; */
+  /* justify-content: center;
+  align-content: center; */
+  color: white;
+  font-size: 2em;
+  /* border-radius: px; */
+}
+#landHead {
+  color: white;
+}
+#contWithin {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logLand {
+  /* float:right; */
+  width: 30vw;
+  height: 60vh;
+  margin-top: 10vw !important;
+  margin: 120px auto;
+  background-color: #ffffff;
+  padding: 40px !important;
+  justify-content: center;
+  align-content: center;
+  color: #a17e8d;
+  font-size: 2em;
+  border-radius: 25px;
+}
+#landingLogo {
+  margin: auto;
+  width: 35%;
+}
+#landingText {
+  text-align: left;
+  max-width: 30ch;
+}
+
+#landImg {
+  padding: 0px;
+}
+#logo {
+  width: 20%;
+}
+#jumboCont {
+  position: relative;
+}
+#jumboCont img {
+  float: left;
+}
+
 .white-bg {
   margin-left: auto;
   margin-right: auto;
@@ -89,7 +168,7 @@ a:hover {
   background-color: #ffffffde;
   border-radius: 20px;
   width: 550px;
-  height: 450px;
+  height: 350px;
 }
 
 /* // Small devices (landscape phones, 500px and up) */
@@ -341,6 +420,9 @@ a:hover {
   margin-top: 5px;
   color: #f55536;
   font-size: 1.5rem;
+}
+.row {
+  margin: 0px !important;
 }
 
 .calendar-bg {
@@ -736,7 +818,7 @@ img {
     max-width: 60ch;
   }
   #messageHistory {
-    height: 500px;
+    height: 70vh;
     padding-left: 0px;
     padding-right: 0px;
     overflow-y: scroll;
@@ -759,6 +841,10 @@ img {
 .card-header {
   background-color: rgba(126, 161, 144, 0.8);
   color: white;
+  font-size: 4vw;
+  /* max-width: 20ch; */
+
+  text-align: left;
 }
 
 .card-body {
@@ -768,19 +854,26 @@ img {
 
 .btn-link {
   color: white;
+  font-size: 2vw;
+  /* overflow: visible; */
 }
 
 #faqContainer {
   background-color: rgba(126, 161, 144, 0.8);
   color: white;
   font-family: 'Oxygen', sans-serif;
-  height: 600px;
+  /* height: 600vh; */
   padding-left: 0px;
   padding-right: 0px;
   margin-bottom: 40px;
 
   /* max-width: 75ch; */
   border-radius: 20px;
+  text-align: left !important;
+}
+#faqContainer .btn-link {
+  text-align: left !important;
+  font-size: 2vw;
 }
 
 #faqContainer p {
@@ -788,6 +881,10 @@ img {
   font-size: 18px;
   font-family: 'Quicksand', sans-serif;
   padding-top: 15px;
+}
+
+#faqContainer h2 {
+  font-size: 10px;
 }
 #logContLand {
   float: right;
