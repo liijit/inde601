@@ -1,5 +1,5 @@
-node_modules
-ts-pile
+node_modules/
+ts-pile/
 .env
 environment.d.ts
-frontend/js
+src/views/**/*

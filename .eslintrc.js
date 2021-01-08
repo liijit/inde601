@@ -8,29 +8,24 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  plugins: ['@typescript-eslint', 'prettier'],
+  extends: ['plugin:@typescript-eslint/recommended', 'prettier/@typescript-eslint', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
-  ],
-  parserOptions: {
-    ecmaVersion: 2018,
-    project: './tsconfig.json',
-    tsconfigRootDir: __dirname,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
   rules: {
     allowExpressions: 'off',
+    'prettier/prettier': 'error',
   },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
+      parserOptions: {
+        ecmaVersion: 2020,
+        project: ['./tsconfig.json'],
+        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
       rules: {
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-unused-vars': 'off',

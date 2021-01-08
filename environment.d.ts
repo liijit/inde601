@@ -5,6 +5,7 @@ declare global {
 			EKEY: string;
 			ALGORITHM: string;
 			IV: string;
+      JWT_SECRET: string;
     }
   }
 }

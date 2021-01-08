@@ -1,1 +1,81 @@
-<h1>Register</h1>
+<%- include('partials/header'); -%>
+  <body>
+    <div class="main-heading text-center white-bg">
+      <h1>Create Account</h1>
+      <div class="container col-xs-4 mt-4 text-center">
+        <form>
+          <input type="text" id="nhsno" name="nhsno" required="required" placeholder="Your NHS Number" />
+          <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
+          <div class="nhsno error"></div>
+          <input type="text" id="name" name="name" required="required" placeholder="Your Name" />
+          <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
+          <div class="name error"></div>
+          <input type="email" id="email" name="email" required="required" placeholder="Your Email Address" />
+          <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
+          <div class="email error"></div>
+          <input type="password" id="password" name="password" required="required" placeholder="New Password" />
+          <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
+          <div class="password error"></div>
+          <input type="submit" class="green-btn" value="Sign Up" />
+        </form>
+        </div>
+      </div>
+
+<script>
+const form = document.querySelector('form');
+const nhsnoError = document.querySelector('.nhsno.error')
+const nameError = document.querySelector('.name.error');
+const emailError = document.querySelector('.email.error');
+const passwordError = document.querySelector('.password.error');
+
+form.addEventListener('submit', async (e) => {
+  //don't refresh page on event
+  e.preventDefault();
+
+  nhsnoError.textContent = '';
+  nameError.textContent = '';
+  emailError.textContent = '';
+  passwordError.textContent = '';
+
+  const nhsno = form.nhsno.value;
+  const name = form.name.value;
+  const email = form.email.value;
+  const password = form.password.value;
+
+  const user = { nhsno, name, email, password };
+
+  const arr = [];
+  for (const value in user) {
+    if (user[value] === '') {
+      console.log(`${value}`);
+    } else {
+      arr.push(`${user[value]}`);
+    }
+  }
+
+  try {
+    console.log(JSON.stringify(user));
+    const res = await fetch('/register', {
+      method: 'POST',
+      body: JSON.stringify(user),
+      headers: { 'Content-Type': 'application/json' }
+    });
+    const data = await res.json();
+    console.log(data)
+    if (data.errors) {
+      nhsnoError.textContent = data.errors.nhsno;
+      nameError.textContent = data.errors.name;
+      emailError.textContent = data.errors.email;
+      passwordError.textContent = data.errors.password;
+    }
+    if (data.user) {
+      location.assign('/');
+      console.log(data.user);
+    }
+  }
+  catch (err) {
+    console.log(err)
+  }
+});
+</script>
+<%- include('partials/footer'); -%>

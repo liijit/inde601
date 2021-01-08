@@ -1,1 +1,41 @@
-<h1>Login</h1>
+<%- include('partials/header'); -%>
+  <body>
+    <div class="main-heading text-center white-bg">
+      <h1>Login</h1>
+      <div class="container col-xs-4 mt-4 text-center">
+        <form>
+          <input type="email" id="email" name="email" required="required" placeholder="Your Email Address" />
+          <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
+          <div class="email error"></div>
+          <input type="password" id="password" name="password" required="required" placeholder="New Password" />
+          <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
+          <div class="password error"></div>
+          <input type="submit" class="green-btn" value="Sign Up" />
+        </form>
+        </div>
+      </div>
+
+<script>
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (e) => {
+  //don't refresh page on event
+  e.preventDefault();
+
+  const email = document.querySelector('#email').value;
+  const password = document.querySelector('#password').value;
+
+  const user = { name, email, password };
+
+  const arr = [];
+  for (const value in user) {
+    if (user[value] === '') {
+      console.log(`${value}`);
+    } else {
+      arr.push(`${user[value]}`);
+    }
+  }
+  console.log(user);
+});
+</script>
+<%- include('partials/footer'); -%>

@@ -1,7 +1,42 @@
-import { prop, getModelForClass } from '@typegoose/typegoose';
+import { prop, pre, post, getModelForClass } from '@typegoose/typegoose';
+import { model, Schema, Model, Document } from 'mongoose';
+import bcrypt from 'bcrypt';
 import isEmail from 'validator/lib/isEmail';
 
+import { nhsSchema } from './nhs.model';
+
+@pre<User>('save', async function (next) {
+  const salt = await bcrypt.genSalt();
+  this.password = await bcrypt.hash(this.password, salt);
+  const nhsno = await nhsSchema.updateOne({ no: this.nhsno }, { user: this._id }, (err, obj) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(obj);
+    }
+  });
+})
 class User {
+  @prop({
+    required: true,
+    validate: {
+      validator: async (e) => {
+        const nhsno = await nhsSchema.findOne({ no: e }, (err, obj: { user: string }) => {
+          return obj;
+        });
+        if (nhsno === null || nhsno === undefined) {
+          return false;
+        } else if (nhsno.user) {
+          return false;
+        } else {
+          return true;
+        }
+      },
+      message: '{VALUE} is not valid',
+    },
+  })
+  nhsno?: number;
+
   @prop({
     required: true,
     validate: {
@@ -17,24 +52,6 @@ class User {
     },
   })
   name?: string;
-
-  @prop({
-    required: false,
-    validate: {
-      validator: (e) => {
-        const result = RegExp.prototype[Symbol.match].call(/^[a-zA-Z\s]+$/, e);
-        if (e === '') {
-          return true;
-        } else if (result) {
-          return true;
-        } else {
-          return false;
-        }
-      },
-      message: '{VALUE} is not valid',
-    },
-  })
-  surname?: string;
 
   @prop({
     required: true,
@@ -62,23 +79,10 @@ class User {
     validate: [
       {
         validator: (e) => {
-          return e.length > 6;
+          // console.log(e.length);
+          return e.length >= 6;
         },
         message: 'Password must include more than 6 characters',
-      },
-      {
-        validator: (e) => {
-          const result = RegExp.prototype[Symbol.match].call(
-            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,}$/,
-            e,
-          );
-          if (result) {
-            return true;
-          } else {
-            return false;
-          }
-        },
-        message: 'Password must include 1 capital and 1 special character',
       },
     ],
   })
