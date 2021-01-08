@@ -1,5 +1,4 @@
 ![Imgur](https://i.imgur.com/48xqpNw.png)
-# Shift 
 
 Shift provides a supportive chat messaging gateway for individuals who are struggling with drug addition. They can book a 1 to 1 session with an available therapist to discuss concerns they may have, and if necessary follow up sessions can be made.
 Users will be able to use this service upon GP referral to ensure both focus and value is present within every given session.
@@ -10,7 +9,7 @@ Users will be able to use this service upon GP referral to ensure both focus and
 - CSS
 - JavaScript
 - [Bootstrap](https://github.com/twbs/bootstrap)
-- [Embedded JavaScript](https://https://github.com/mde/ejs)
+- [Embedded JavaScript](https://github.com/mde/ejs)
 - [FullCalendar](https://github.com/fullcalendar/fullcalendar)
 - [jQuery](https://github.com/jquery/jquery)
 
