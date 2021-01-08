@@ -1,4 +1,4 @@
-![Imgur](https://i.imgur.com/iHJFPvf.png#centerme)
+![Imgur](https://i.imgur.com/48xqpNw.png)
 # Shift 
 
 Shift provides a supportive chat messaging gateway for individuals who are struggling with drug addition. They can book a 1 to 1 session with an available therapist to discuss concerns they may have, and if necessary follow up sessions can be made.
@@ -8,8 +8,9 @@ Users will be able to use this service upon GP referral to ensure both focus and
 ### Frontend -
 - HTML
 - CSS
+- JavaScript
 - [Bootstrap](https://github.com/twbs/bootstrap)
-- [Handlebars](https://github.com/handlebars-lang/handlebars.js)
+- [Embedded JavaScript](https://https://github.com/mde/ejs)
 - [FullCalendar](https://github.com/fullcalendar/fullcalendar)
 - [jQuery](https://github.com/jquery/jquery)
 
@@ -23,3 +24,14 @@ Users will be able to use this service upon GP referral to ensure both focus and
 - [bcrypt](https://github.com/kelektiv/node.bcrypt.js)
 - [jwt](https://github.com/lcobucci/jwt)
 - [socket.io](https://github.com/socketio/socket.io)
+- [Feathers](https://github.com/feathersjs/feathers)
+
+### Environment -
+- [dotenv](https://github.com/motdotla/dotenv)
+- [nodemon](https://github.com/remy/nodemon)
+- [ESlint](https://github.com/eslint/eslint)
+- [Prettier](https://github.com/prettier/prettier)
+- [husky](https://github.com/typicode/husky)
+- [lint-staged](https://github.com/okonet/lint-staged)
+- [ts-node](https://github.com/TypeStrong/ts-node)
+- [Browsersync](https://github.com/BrowserSync/browser-sync)
