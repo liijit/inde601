@@ -28,7 +28,7 @@
               Shift is an online messaging service aimed at those who are struggling with drug addiction with GP
               referall. We also have an FAQ page for those who are not a member but may need some help! Log in today to
               start talking!<br />
-              <a href="faq.html"> <input type="submit" value="See More" id="landingButton" /></a>
+              <a href="faq_landing.html"> <input type="submit" value="See More" id="landingButton" /></a>
               <a href="login.html"> <input type="submit" value="Log In" id="logInButton" /></a>
             </p>
           </div>
@@ -38,14 +38,14 @@
             <h1>Log In</h1>
             <form action="/readFromDB" method="POST" id="myForm">
               <input type="email" id="email" name="email" required="required" placeholder="Email Address" />
-              <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
+              <div class="required"><i class="fas fa-exclamation-triangle"></i></div><br>
 
               <input type="password" id="password" name="password" required="required" placeholder="Password" />
-              <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
+              <div class="required"><i class="fas fa-exclamation-triangle"></i></div><br>
 
               <!--Needs to submit to the database-->
-              <input type="submit" class="green-btn" value="Sign In" />
-              <br />
+              <input type="submit" class="green-btn" value="Sign In"/>
+              <br>
               <p id="creAcLink">Don't have an Account? <a href="createaccount.html" id="creAcA">Sign Up</a></p>
               <!--BUTTON NEEDS TO LINK TO user account-->
             </form>
