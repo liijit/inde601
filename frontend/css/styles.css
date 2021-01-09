@@ -7,6 +7,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
 li {
   display: inline;
 }
@@ -43,12 +44,14 @@ a {
 a:hover {
   color: #a17e8d91;
 }
-/* // START OF ETHAN CSS // */
+ 
+
 
 #creAcLink {
   font-size: 0.5em;
   letter-spacing: 0px;
   text-align: center;
+  
 }
 #creAcA {
   color: #a17e8d;
@@ -167,12 +170,12 @@ a:hover {
 .white-bg {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 15%;
   justify-content: center;
   background-color: #ffffffde;
   border-radius: 20px;
   width: 550px;
-  height: 350px;
+  height: auto;
 }
 
 /* // Small devices (landscape phones, 500px and up) */
@@ -416,9 +419,7 @@ a:hover {
   }
 }
 
-.navbar-bottom {
-  color: #4d3b43;
-}
+
 
 .green-btn {
   margin-top: 15px;
@@ -456,7 +457,7 @@ a:hover {
 .settings-bg {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 5%;
   padding-bottom: 20px;
   justify-content: center;
   background-color: #ffffffde;
@@ -484,6 +485,7 @@ a:hover {
 .settings-h {
   margin-top: 15px;
   font-size: 2.5em;
+  font-weight: 100;
   color: #e45b32 !important;
   text-align: center;
 }
@@ -577,6 +579,36 @@ a:hover {
   color: white;
 }
 
+.navbar-top
+{
+
+  border-bottom-right-radius: 20px;
+  width: 80px;
+  background-color: #fefefe9d;
+  margin-left: -10px;
+
+
+}
+
+
+.nav-icon-top {
+
+  width: 40px;
+
+}
+
+.navbar-bottom {
+
+  width: 260px;
+  background-color: #fefefe9d;
+  margin-left: 0px;
+  padding: 5px;
+
+}
+
+
+
+
 /* // Small devices (max 500px) */
 @media screen and (max-width: 500px) {
   .calendar {
@@ -597,7 +629,7 @@ a:hover {
   }
 }
 
-.navbar {
+.navbar-bottom {
   border-top-right-radius: 40px;
   border-bottom-left-radius: 0px;
   padding: 10px;
@@ -610,6 +642,8 @@ a:hover {
 .nav-icon:hover {
   transform: scale(1.2);
 }
+
+
 
 .dropdown-menu {
   border-radius: 10px;
@@ -972,13 +1006,21 @@ img {
 .card-body {
   background-color: rgba(126, 161, 144, 0.8);
   color: white;
+  font-size: 22 px;
+
 }
 
 .btn-link {
   color: white;
-  font-size: 2vw;
-  /* overflow: visible; */
+  font-size: 20px;
+  text-decoration: none;
+  
 }
+
+  .btn-link:hover{
+
+    color: rgba(255, 255, 255, 0.61);
+  }
 
 #faqContainer {
   background-color: rgba(126, 161, 144, 0.8);
@@ -995,7 +1037,7 @@ img {
 }
 #faqContainer .btn-link {
   text-align: left !important;
-  font-size: 2vw;
+  font-size: 12px;
 }
 
 #faqContainer p {
@@ -1015,6 +1057,7 @@ img {
 .btn.btn-link {
   white-space: initial;
   text-align: left;
+
 }
 
 .fixed-bottom {
