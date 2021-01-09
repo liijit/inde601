@@ -14,49 +14,42 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <title>Shift</title>
+    <link rel="icon" type="image/png" href="/assets/icon-logo.png" sizes="32x32" />
+
+    <title>Shift - Login</title>
   </head>
   <body>
     <div class="row">
-      <div class="container col-8" id="landingJumbo">
-        <div class="container col-xs-4 mt-4 text-center" id="contWithin">
+      <div id="wrapper">
+        <div class="container col-xs-4 mt-4 text-center" id="boxOne">
           <div class="row">
             <img src="assets/logo.png" id="landingLogo" />
-
-            <!-- <div class="row"><img src="assets/logo.png" id="logo" /> -->
-            <!-- <h1 class="display-4" id="landHead">Welcome to Shift</h1> -->
-
-            <br />
-
-            <p id="landingText">
+            <p>
               Shift is an online messaging service aimed at those who are struggling with drug addiction with GP
               referall. We also have an FAQ page for those who are not a member but may need some help! Log in today to
-              start talking!
-
-              <a href="faq.html"> <input type="submit" class="green-btn" value="See More" /></a>
+              start talking!<br />
+              <a href="faq.html"> <input type="submit" value="See More" id="landingButton" /></a>
+              <a href="login.html"> <input type="submit" value="Log In" id="logInButton" /></a>
             </p>
           </div>
         </div>
-      </div>
+        <div class="container col-xs-4 mt-4 text-center" id="boxTwo">
+          <div id="hello">
+            <h1>Log In</h1>
+            <form action="/readFromDB" method="POST" id="myForm">
+              <input type="email" id="email" name="email" required="required" placeholder="Email Address" />
+              <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
 
-      <div class="main-heading text-center white-bg" id="logLand">
-        <h1>Log In</h1>
+              <input type="password" id="password" name="password" required="required" placeholder="Password" />
+              <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
 
-        <div class="container col-xs-4 mt-4 text-center">
-          <!--NEED A readFromDB FORM-->
-          <form action="/readFromDB" method="POST">
-            <input type="email" id="email" name="email" required="required" placeholder="Email Address" />
-            <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
-
-            <input type="password" id="password" name="password" required="required" placeholder="Password" />
-            <div class="required"><i class="fas fa-exclamation-triangle"></i></div>
-
-            <!--Needs to submit to the database-->
-            <input type="submit" class="green-btn" value="Sign In" />
-            <br />
-            <p id="creAcLink">Don't have an Account? <a href="createaccount.html" id="creAcA">Sign Up</a></p>
-            <!--BUTTON NEEDS TO LINK TO user account-->
-          </form>
+              <!--Needs to submit to the database-->
+              <input type="submit" class="green-btn" value="Sign In" />
+              <br />
+              <p id="creAcLink">Don't have an Account? <a href="createaccount.html" id="creAcA">Sign Up</a></p>
+              <!--BUTTON NEEDS TO LINK TO user account-->
+            </form>
+          </div>
         </div>
       </div>
     </div>

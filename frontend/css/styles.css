@@ -130,7 +130,7 @@ a:hover {
   height: 60vh;
   margin-top: 10vw !important;
   margin: 120px auto;
-  background-color: #ffffff;
+  background-color: #ffffffde;
   padding: 40px !important;
   justify-content: center;
   align-content: center;
@@ -139,8 +139,12 @@ a:hover {
   border-radius: 25px;
 }
 #landingLogo {
-  margin: auto;
+  margin: 30px;
+  float: left;
   width: 35%;
+}
+#boxTwo h1 {
+  margin-top: 80px;
 }
 #landingText {
   text-align: left;
@@ -182,6 +186,22 @@ a:hover {
     height: auto;
     width: 300px;
   }
+  #logLand {
+    margin-top: 80px;
+    padding-bottom: 20px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 300px;
+    font-size: 0.5em !important;
+  }
+  #logLand .col-4 {
+    width: 100%;
+  }
+  #landingJumbo {
+    display: none;
+  }
   .main-heading {
     margin-top: 40%;
     font-size: 1em;
@@ -189,6 +209,24 @@ a:hover {
   .main-heading p {
     margin-top: 10px;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #landingText {
+    font-size: 10px;
+  }
+  #logLand {
+    font-size: 10px;
+  }
+  #logLand #email {
+    width: 95% !important;
+  }
+  /* #logLand input{
+    width: 150px;
+  } */
+  #contWithin {
+    font-size: 16px;
   }
 }
 
@@ -205,7 +243,69 @@ a:hover {
   margin-top: 20px;
   font-size: 0.5em !important;
 }
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center !important;
+  padding: 0;
+  vertical-align: middle;
+  min-width: 100%;
+  display: inline-block;
+}
 
+#boxOne {
+  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  justify-content: center;
+  background-color: #ffffffde;
+  border-radius: 20px;
+  width: 60%;
+  height: 350px;
+  display: inline-block;
+}
+#boxTwo {
+  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  justify-content: center;
+  background-color: #ffffffde;
+  border-radius: 20px;
+  width: 30%;
+  height: 350px;
+  display: inline-block;
+}
+#boxOne p {
+  float: right;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 16px;
+}
+#logInButton {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 5px;
+  width: 50px;
+  background-color: #7ea292;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 0.5em;
+}
+#landingButton {
+  margin-top: 15px;
+  margin-left: auto;
+  padding: 5px;
+  width: 50px;
+  background-color: #7ea292;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 0.5em;
+}
 #email {
   display: inline-flex;
   justify-content: center;
@@ -310,6 +410,9 @@ a:hover {
   }
   .btn-add {
     background-color: #7ea292c5;
+  }
+  #contWithin {
+    font-size: 26px;
   }
 }
 
@@ -823,6 +926,16 @@ img {
     padding-right: 0px;
     overflow-y: scroll;
   }
+
+  #boxOne {
+    width: 500px;
+  }
+  #landingButton {
+    display: none;
+  }
+  #boxTwo {
+    visibility: hidden;
+  }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -835,6 +948,15 @@ img {
   */ #messageHistory {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  #boxTwo {
+    visibility: visible;
+  }
+  #landingButton {
+    display: inline-block;
+  }
+  #logInButton {
+    display: none;
   }
 }
 
