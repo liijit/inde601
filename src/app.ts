@@ -3,6 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import path from 'path';
 import cookieParser from 'cookie-parser';
+import 'dotenv/config';
 
 const app: express.Application = express();
 const corsS = cors();

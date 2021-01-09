@@ -27,10 +27,9 @@ Users will be able to use this service upon GP referral to ensure both focus and
 
 ### Environment -
 - [dotenv](https://github.com/motdotla/dotenv)
-- [nodemon](https://github.com/remy/nodemon)
+- [ts-node-dev](https://github.com/wclr/ts-node-dev)
 - [ESlint](https://github.com/eslint/eslint)
 - [Prettier](https://github.com/prettier/prettier)
 - [husky](https://github.com/typicode/husky)
 - [lint-staged](https://github.com/okonet/lint-staged)
-- [ts-node](https://github.com/TypeStrong/ts-node)
 - [Browsersync](https://github.com/BrowserSync/browser-sync)

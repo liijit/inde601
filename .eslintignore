@@ -3,3 +3,4 @@ ts-pile/
 .env
 environment.d.ts
 src/views/**/*
+frontend
