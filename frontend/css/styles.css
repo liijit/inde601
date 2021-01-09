@@ -710,6 +710,10 @@ img {
   /* align-content: center!important; */
   /* align-items: center!important; */
 }
+#inboxContainer {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+}
 #responseMsg {
   overflow: hidden;
   margin: 26px 0 26px;
