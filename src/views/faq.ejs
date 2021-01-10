@@ -2,7 +2,7 @@
 <title>FAQ</title>
 </head>
 <body>
-  <%- include('partials/homeBtn.ejs'); -%>
+  <%- include('partials/homeBtn'); -%>
   <h1 class="text-center mt-3" style="font-size: 50px;">FAQs</h1>
   <div class="col-2"></div>
   <div class="container col-8 mt-4" id="faqContainer">
@@ -162,7 +162,7 @@
     </div>
   </div>
   <% if(user) { %>
-    <%- include('partials/navBar.ejs'); -%>
+    <%- include('partials/navBar'); -%>
   <% } else {}%>
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

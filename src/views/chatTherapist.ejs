@@ -1,3 +1,4 @@
+<%- include('partials/header'); -%>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -11,6 +12,7 @@
     <title>Chat</title>
   </head>
   <body>
+    <%- include('partials/homeBtn'); -%>
     <div class="container" id="responseNameContainer">
       <h1 id="responseName"><span>Angela Erhoin</span></h1>
     </div>
@@ -94,5 +96,5 @@
       </div>
       <div class="col-1"></div>
     </div>
-    <%- include('partials/navBar.ejs'); -%>
+    <%- include('partials/navBar'); -%>
 <%- include('partials/footer'); -%>
