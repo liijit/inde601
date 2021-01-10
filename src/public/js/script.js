@@ -21,6 +21,7 @@ window.onclick = function(event) {
   }
 }
 
+
 //Change Font Sizes accoring to buttons
 function smallerH1() {
   document.getElementById("fontH1").style.fontSize = "1.2em";
@@ -84,6 +85,6 @@ for (i = 0; i < acc.length; i++) {
       if (this.classList.toggle === "active") {
         this.classList.toggle("active")
       }
-    };
+    } 
   });
 }

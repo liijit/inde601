@@ -35,7 +35,3 @@ mongoose.connect(uri!, { useNewUrlParser: true, useCreateIndex: true, useUnified
   }
   console.log('MongoDB database connection established successfully');
 });
-
-app.get('/', (req, res) => {
-  res.send('Example text');
-});

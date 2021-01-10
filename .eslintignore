@@ -4,3 +4,5 @@ ts-pile/
 environment.d.ts
 src/views/**/*
 frontend
+src/public/js
+src/public/library/

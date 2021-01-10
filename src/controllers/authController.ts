@@ -15,6 +15,14 @@ const handleErrors = (err: { message: string; errors: string; code: number }) =>
     return errors;
   }
 
+  if (err.message.includes('Incorrect email')) {
+    errors.email = 'Invalid email';
+  }
+
+  if (err.message.includes('Incorrect password')) {
+    errors.password = 'Invalid password';
+  }
+
   if (err.message.includes('User validation failed')) {
     Object.values(err.errors).forEach(({ message, path }: any) => {
       errors[path] = message;
@@ -40,8 +48,30 @@ export function login_get(req: Request, res: Response) {
   res.render('login');
 }
 
+export function home_get(req: Request, res: Response) {
+  res.render('landingpage');
+}
+
+export function faq_get(req: Request, res: Response) {
+  res.render('faq');
+}
+
 export function register_get(req: Request, res: Response) {
   res.render('register');
+}
+
+export function menu_get(req: Request, res: Response) {
+  res.render('menu');
+}
+
+export function settings_get(req: Request, res: Response) {
+  res.render('settings');
+}
+
+export function logout_get(req: Request, res: Response) {
+  res.cookie('jwt', '', { maxAge: 0 });
+  res.redirect('/');
+  console.log('test');
 }
 
 export function register_post(req: Request, res: Response) {
@@ -66,6 +96,7 @@ export function register_post(req: Request, res: Response) {
             no: name,
             user: user._id,
           });
+          res.redirect('/menu');
         })
         .catch((error) => {
           const errors = handleErrors(error);
@@ -77,6 +108,15 @@ export function register_post(req: Request, res: Response) {
     });
 }
 
-export function login_post(req: Request, res: Response) {
-  res.send('login');
+export async function login_post(req: Request, res: Response) {
+  const { email, password } = req.body;
+  try {
+    const user = await userSchema.login(email, password);
+    const token = generateToken(user._id);
+    res.cookie('jwt', token, { httpOnly: true, maxAge: maxAge * 1000 });
+    res.status(200).json({ user: user._id });
+  } catch (error) {
+    const errors = handleErrors(error);
+    return res.status(400).json({ errors });
+  }
 }

@@ -1,0 +1,91 @@
+<%- include('partials/header'); -%>
+  <title>Shift</title>
+</head>
+<body>
+    <div class="row">
+      <div id="wrapper">
+        <div class="container col-xs-4 mt-4 text-center" id="boxOne">
+          <div class="row">
+            <img src="assets/logo.png" id="landingLogo" />
+            <p>
+              Shift is an online messaging service aimed at those who are struggling with drug addiction with GP
+              referall. We also have an FAQ page for those who are not a member but may need some help! Log in today to
+              start talking!<br />
+              <a onclick="window.location.href='/faq'" style="cursor: pointer; width:100%"> <input type="submit" value="See More" id="landingButton" /></a>
+              <a onclick="window.location.href='/login'" style="cursor: pointer;"> <input type="submit" value="Log In" id="logInButton" /></a>
+            </p>
+          </div>
+        </div>
+        <div class="container col-xs-4 mt-4 text-center" id="boxTwo">
+          <div id="hello">
+            <h1>Log In</h1>
+            <form>
+              <div class="field-cont">
+              <input type="email" id="email" name="email" required="required" placeholder="Email Address" />
+              <div class="email required"><i class="fas fa-exclamation-triangle"></i></div><br>
+              </div>
+              <div class="email error"></div>
+              <div class="field-cont">
+              <input type="password" id="password" name="password" required="required" placeholder="Password" />
+              <div class="password required"><i class="fas fa-exclamation-triangle"></i></div><br>
+              </div>
+              <div class="password error"></div>
+              <input type="submit" class="green-btn" value="Sign In"/>
+              <br>
+              <p id="creAcLink" class="mt-1 p-2">Don't have an Account? <a onclick="window.location.href='/register'" style="cursor: pointer;" id="creAcA">Sign Up</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+const form = document.querySelector('form');
+const emailError = document.querySelector('.email.error');
+const passwordError = document.querySelector('.password.error');
+
+form.addEventListener('submit', async (e) => {
+  //don't refresh page on event
+  e.preventDefault();
+
+  emailError.textContent = '';
+  passwordError.textContent = '';
+
+  const email = form.email.value;
+  const password = form.password.value;
+
+  const user = { email, password };
+
+  try {
+    const res = await fetch('/login', {
+      method: 'POST',
+      body: JSON.stringify(user),
+      headers: { 'Content-Type': 'application/json' }
+    });
+    const data = await res.json();
+    if (data.errors) {
+      emailError.textContent = data.errors.email;
+      passwordError.textContent = data.errors.password;
+
+      const arr = [];
+      for (const value in data.errors) {
+        if (data.errors[value] === '') {
+        } else {
+          arr.push(`${[value]}`);
+        }
+      }
+
+      for(i = 0; i < arr.length; i++) {
+        const element = document.querySelector('.'+arr[i]+'.required');
+        element.style="display:inline-flex;visibility:visible;";
+      }
+    }
+    if (data.user) {
+      location.assign('/menu');
+    }
+  }
+  catch (err) {
+    console.trace(err)
+  }
+});
+</script>
+<%- include('partials/footer'); -%>

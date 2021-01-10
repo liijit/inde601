@@ -1,0 +1,74 @@
+<%- include('partials/header'); -%>
+    <title>Menu</title>
+  </head>
+    <body>
+    <div class="container white-bg">
+      <div class="row">
+        <div class="heading-text text-center">
+          <% if(user) { %>
+          <h2>Hello <%= user.name %></h2>
+          <% } else {}%>
+        </div>
+
+        <div class="container">
+          <div class="row mt img">
+            <a href="chat.html"
+              ><img src="assets/messages-icon.png" class="mr-2 mt-5 mb-2 img-overlay" alt="messasges icon" width="100px"
+            /></a>
+            <a href="calendar.html"
+              ><img src="assets/calender-icon.png" class="mb-2 mt-5 img-overlay" alt="messasges icon" width="100px"
+            /></a>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row img">
+            <a onclick="window.location.href='/settings'" style="cursor: pointer;"
+              ><img src="assets/settings-icon.png" class="mr-2 mb-5 img-overlay" alt="messasges icon" width="100px"
+            /></a>
+            <a href="faq.html"
+              ><img src="assets/FAQ-icon.png" class="img-overlay mb-5" alt="messasges icon" width="100px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+const form = document.querySelector('form');
+const emailError = document.querySelector('.email.error');
+const passwordError = document.querySelector('.password.error');
+
+
+function postName() => {
+
+}
+
+form.addEventListener('submit', async (e) => {
+  //don't refresh page on event
+  e.preventDefault();
+
+  try {
+    console.log(JSON.stringify(user));
+    const res = await fetch('/login', {
+      method: 'POST',
+      body: JSON.stringify(user),
+      headers: { 'Content-Type': 'application/json' }
+    });
+    const data = await res.json();
+    if (data.errors) {
+      emailError.textContent = data.errors.email;
+      passwordError.textContent = data.errors.password;
+    }
+    if (data.user) {
+      console.log(data);
+      location.assign('/menu');
+    }
+  }
+  catch (err) {
+    // console.trace(err)
+    console.warn(err)
+  }
+});
+</script>
+<%- include('partials/footer'); -%>

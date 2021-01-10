@@ -1,4 +1,4 @@
-import { prop, pre, post, getModelForClass } from '@typegoose/typegoose';
+import { prop, pre, post, ReturnModelType, getModelForClass } from '@typegoose/typegoose';
 import { model, Schema, Model, Document } from 'mongoose';
 import bcrypt from 'bcrypt';
 import isEmail from 'validator/lib/isEmail';
@@ -8,13 +8,7 @@ import { nhsSchema } from './nhs.model';
 @pre<User>('save', async function (next) {
   const salt = await bcrypt.genSalt();
   this.password = await bcrypt.hash(this.password, salt);
-  const nhsno = await nhsSchema.updateOne({ no: this.nhsno }, { user: this._id }, (err, obj) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log(obj);
-    }
-  });
+  const nhsno = await nhsSchema.updateOne({ no: this.nhsno }, { user: this._id });
 })
 class User {
   @prop({
@@ -87,6 +81,18 @@ class User {
     ],
   })
   password?: string;
+
+  public static async login(this: ReturnModelType<typeof User>, email: string, password: string) {
+    const user = await this.findOne({ email });
+    if (user) {
+      const auth = await bcrypt.compare(password, user.password!);
+      if (auth) {
+        return user;
+      }
+      throw Error('Incorrect password');
+    }
+    throw Error('Incorrect email');
+  }
 }
 
 class Slot {
