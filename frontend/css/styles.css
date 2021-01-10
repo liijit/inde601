@@ -44,17 +44,11 @@ a {
 a:hover {
   color: #a17e8d91;
 }
-<<<<<<< HEAD
-=======
- 
-
->>>>>>> origin/dev
 
 #creAcLink {
   font-size: 0.5em;
   letter-spacing: 0px;
   text-align: center;
-  
 }
 #creAcA {
   color: #a17e8d;
@@ -421,11 +415,6 @@ a:hover {
     font-size: 26px;
   }
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin/dev
 
 .green-btn {
   margin-top: 15px;
@@ -585,18 +574,11 @@ a:hover {
   color: white;
 }
 
-<<<<<<< HEAD
 .navbar-top {
-=======
-.navbar-top
-{
-
->>>>>>> origin/dev
   border-bottom-right-radius: 20px;
   width: 80px;
   background-color: #fefefe9d;
   margin-left: -10px;
-<<<<<<< HEAD
 }
 
 .nav-icon-top {
@@ -604,36 +586,19 @@ a:hover {
 }
 
 .navbar-bottom {
-=======
-
-
 }
 
-
 .nav-icon-top {
-
   width: 40px;
-
 }
 
 .navbar-bottom {
-
->>>>>>> origin/dev
   width: 260px;
   background-color: #fefefe9d;
   margin-left: 0px;
   padding: 5px;
-<<<<<<< HEAD
 }
 
-=======
-
-}
-
-
-
-
->>>>>>> origin/dev
 /* // Small devices (max 500px) */
 @media screen and (max-width: 500px) {
   .calendar {
@@ -667,8 +632,6 @@ a:hover {
 .nav-icon:hover {
   transform: scale(1.2);
 }
-
-
 
 .dropdown-menu {
   border-radius: 10px;
@@ -1036,30 +999,21 @@ img {
   background-color: rgba(126, 161, 144, 0.8);
   color: white;
   font-size: 22 px;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/dev
 }
 
 .btn-link {
   color: white;
   font-size: 20px;
   text-decoration: none;
-<<<<<<< HEAD
 }
 
 .btn-link:hover {
   color: rgba(255, 255, 255, 0.61);
-=======
-  
->>>>>>> origin/dev
 }
 
-  .btn-link:hover{
-
-    color: rgba(255, 255, 255, 0.61);
-  }
+.btn-link:hover {
+  color: rgba(255, 255, 255, 0.61);
+}
 
 #faqContainer {
   background-color: rgba(126, 161, 144, 0.8);
@@ -1096,7 +1050,6 @@ img {
 .btn.btn-link {
   white-space: initial;
   text-align: left;
-
 }
 
 .fixed-bottom {
