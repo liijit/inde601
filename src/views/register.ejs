@@ -2,6 +2,7 @@
   <title>Register</title>
 </head>
 <body>
+  <%- include('partials/homeBtn.ejs'); -%>
   <div class="main-heading text-center white-bg">
     <h1>Create Account</h1>
     <div class="container col-xs-4 mt-4 text-center">
@@ -86,7 +87,7 @@ form.addEventListener('submit', async (e) => {
       }
     }
     if (data.user) {
-      location.assign('/');
+      location.assign('/menu');
     }
   }
   catch (err) {

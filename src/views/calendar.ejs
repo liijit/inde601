@@ -1,0 +1,73 @@
+<%- include('partials/header'); -%>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Calendar</title>
+  </head>
+ <body>
+<%- include('partials/homeBtn.ejs'); -%>
+    <div class="container calendar-bg">
+      <div class="main-heading text-center">
+        <h1 id="fontH1">Get Started</h1>
+        <p>Select available dates and times you are available to speak to your therapist.</p>
+
+        <div class="btn-group droptop">
+          <!--Add times available-->
+          <button
+            type="button"
+            onclick="timeSelector()"
+            value="date.date._d"
+            class="btn btn-group btn-drop dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Time
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">10:00-11:00</a>
+            <a class="dropdown-item" href="#">11:00-12:00</a>
+            <a class="dropdown-item" href="#">12:00-13:00</a>
+          </div>
+          <button type="button" class="btn btn-add btn-info" id="addDatesAndTimes" value="Add">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!--Calendar-->
+    <div id="calendar" class="calendar mb-5"></div>
+
+    <!--Pull in calendar data-->
+    <div id="myDIV"></div>
+    <!-- </div> -->
+
+    <div class="col-lg-2 col-sm-1"></div>
+    <%- include('partials/navBar.ejs'); -%>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js"></script>
+  <script src="library/picker.js"></script>
+  <script src="library/picker.date.js"></script>
+  <script src="library/picker.time.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+
+  </script>
+<%- include('partials/footer'); -%>

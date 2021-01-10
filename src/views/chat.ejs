@@ -1,0 +1,85 @@
+<%- include('partials/header'); -%>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title> Chat</title>
+  </head>
+  <body>
+    <%- include('partials/homeBtn.ejs'); -%>
+    <div class="container" id="responseNameContainer">
+      <h1 id="responseName"><span>Angela Erhoin</span></h1>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+
+      <div class="container col-8" id="chatContainer">
+        <div class="container" id="messageHistory">
+          <div class="container" id="responseMsg">
+            <div id="innerContainerTher">
+              <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
+            </div>
+          </div>
+
+          <div class="container" id="userMsg">
+            <div id="innerContainerUser">
+              <p id="userText">hi angela am addicted to drugs and i dont know what to do so can you help me out pls</p>
+            </div>
+          </div>
+
+          <div class="container" id="responseMsg">
+            <div id="innerContainerTher">
+              <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
+            </div>
+          </div>
+
+          <div class="container" id="userMsg">
+            <div id="innerContainerUser">
+              <p id="userText">hi angela am addicted to drugs and i dont know what to do so can you help me out pls</p>
+            </div>
+          </div>
+
+          <div class="container" id="responseMsg">
+            <div id="innerContainerTher">
+              <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
+            </div>
+          </div>
+          <div class="container" id="userMsg">
+            <div id="innerContainerUser">
+              <p id="userText">hi angela am addicted to drugs and i dont know what to do so can you help me out pls</p>
+            </div>
+          </div>
+
+          <div class="container" id="responseMsg">
+            <div id="innerContainerTher">
+              <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
+            </div>
+          </div>
+          <div class="container" id="userMsg">
+            <div id="innerContainerUser">
+              <p id="userText">hi angela am addicted to drugs and i dont know what to do so can you help me out pls</p>
+            </div>
+          </div>
+
+          <div class="container" id="responseMsg">
+            <div id="innerContainerTher">
+              <p id="responseText">hi im angela and im a therapist how can i help you today please hun</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="flex col-8" id="typeMessageContainer">
+        <textarea id="typeMessageBox" placeholder="Type Message..."></textarea>
+        <div id="sendButtonContainer">
+          <input type="submit" class="btn-sendMes" id="sendMessageToOther" value="Send" />
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+<%- include('partials/navBar.ejs'); -%>
+  <script src="../frontend/js/script.js"></script>
+<%- include('partials/footer'); -%>

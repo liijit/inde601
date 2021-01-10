@@ -175,6 +175,10 @@ a:hover {
   height: auto;
 }
 
+.error404Img {
+  height: 250px;
+}
+
 /* // Small devices (landscape phones, 500px and up) */
 @media screen and (max-width: 500px) {
   .white-bg {
@@ -357,6 +361,10 @@ a:hover {
 
   .required {
     margin-top: 5px;
+  }
+
+  .error404Img {
+    height: 120px;
   }
 }
 
@@ -561,6 +569,14 @@ a:hover {
   border-radius: 20px;
   font-size: 1em;
   font-family: 'Oxygen', sans-serif !important;
+  color: white;
+}
+
+.fc-day-number {
+  color: white;
+}
+
+.fc-day-header {
   color: white;
 }
 

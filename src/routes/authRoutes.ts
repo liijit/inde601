@@ -9,7 +9,8 @@ import {
   login_post,
   logout_get,
   menu_get,
-  menu_post,
+  chat_get,
+  calendar_get,
   settings_get,
 } from '../controllers/authController';
 
@@ -25,7 +26,9 @@ route.get('/login', login_get);
 route.post('/login', login_post);
 route.get('/logout', auth, logout_get);
 route.get('/menu', auth, menu_get);
-route.post('/menu', menu_post);
+route.get('/calendar', auth, calendar_get);
+route.get('/chat', auth, chat_get);
+// route.post('/menu', menu_post);
 route.get('/settings', auth, settings_get);
 
 module.exports = route;

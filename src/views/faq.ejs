@@ -2,11 +2,7 @@
 <title>FAQ</title>
 </head>
 <body>
-  <nav class="navbar-center navbar-default navbar-top" style="text-align: center;">
-    <div class="container icon-bg">
-      <a onclick="window.location.href='/'" style="cursor: pointer;"><img src="assets/home-icon.png" class="mb-2 ml-2 mt-2 nav-icon-top  img-overlay" alt="menu icon" /></a>
-    </div>
-  </nav>
+  <%- include('partials/homeBtn.ejs'); -%>
   <h1 class="text-center mt-3" style="font-size: 50px;">FAQs</h1>
   <div class="col-2"></div>
   <div class="container col-8 mt-4" id="faqContainer">
@@ -165,6 +161,9 @@
       </div>
     </div>
   </div>
+  <% if(user) { %>
+    <%- include('partials/navBar.ejs'); -%>
+  <% } else {}%>
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

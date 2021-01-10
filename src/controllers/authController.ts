@@ -45,11 +45,19 @@ const generateToken = (id: string) => {
 };
 
 export function login_get(req: Request, res: Response) {
-  res.render('login');
+  if (res.locals.user) {
+    res.render('menu');
+  } else {
+    res.render('login');
+  }
 }
 
 export function home_get(req: Request, res: Response) {
-  res.render('landingpage');
+  if (res.locals.user) {
+    res.render('menu');
+  } else {
+    res.render('landingpage');
+  }
 }
 
 export function faq_get(req: Request, res: Response) {
@@ -57,11 +65,23 @@ export function faq_get(req: Request, res: Response) {
 }
 
 export function register_get(req: Request, res: Response) {
-  res.render('register');
+  if (res.locals.user) {
+    res.render('menu');
+  } else {
+    res.render('register');
+  }
 }
 
 export function menu_get(req: Request, res: Response) {
   res.render('menu');
+}
+
+export function chat_get(req: Request, res: Response) {
+  res.render('chat');
+}
+
+export function calendar_get(req: Request, res: Response) {
+  res.render('calendar');
 }
 
 export function settings_get(req: Request, res: Response) {
