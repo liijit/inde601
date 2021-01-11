@@ -26,7 +26,7 @@ class User {
           return true;
         }
       },
-      message: '{VALUE} is not valid',
+      message: '"{VALUE}" not been registered',
     },
   })
   nhsno?: number;
@@ -42,7 +42,7 @@ class User {
           return false;
         }
       },
-      message: '{VALUE} is not valid',
+      message: 'Name should only contain letters',
     },
   })
   name?: string;
@@ -62,7 +62,7 @@ class User {
             return false;
           }
         },
-        message: '{VALUE} is not valid',
+        message: '"{VALUE}" is not valid',
       },
     ],
   })

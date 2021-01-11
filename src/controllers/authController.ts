@@ -91,7 +91,6 @@ export function settings_get(req: Request, res: Response) {
 export function logout_get(req: Request, res: Response) {
   res.cookie('jwt', '', { maxAge: 0 });
   res.redirect('/');
-  console.log('test');
 }
 
 export function register_post(req: Request, res: Response) {

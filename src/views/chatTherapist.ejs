@@ -13,18 +13,96 @@
   </head>
   <body>
     <%- include('partials/homeBtn'); -%>
+    <!-- create an id that links to database -->
+    <!-- <img id="myBackgroundImage"src="assets/background.png"> -->
+    <nav class="navbar-center navbar-default navbar-top" style="text-align: center">
+      <div class="container icon-bg">
+        <a href="menu.html"
+          ><img src="assets/home-icon.png" class="mb-2 ml-2 mt-2 nav-icon-top img-overlay" alt="menu icon"
+        /></a>
+      </div>
+    </nav>
+
     <div class="container" id="responseNameContainer">
       <h1 id="responseName"><span>Angela Erhoin</span></h1>
     </div>
+
     <div class="row">
       <div class="col-1"></div>
 
-      <div class="col-4" id="inboxContainer">
+      <div class="col-2" id="inboxContainer">
         <div class="container">
-          <h1>hello</h1>
-          <h3>test</h3>
+          <h1>Messages</h1>
+        </div>
+
+        <div class="list-group rounded-0">
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <h1 class="mb-0">A</h1>
+              <small class="small font-weight-bold">25 Dec</small>
+            </div>
+            <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur.</p>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <h1 class="mb-0">B</h1>
+              <small class="small font-weight-bold">14 Dec</small>
+            </div>
+            <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur.</p>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <h1 class="mb-0">C</h1>
+              <small class="small font-weight-bold">9 Nov</small>
+            </div>
+            <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur.</p>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <h1 class="mb-0">D</h1>
+              <small class="small font-weight-bold">18 Oct</small>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <h1 class="mb-0">E</h1>
+              <small class="small font-weight-bold">17 Oct</small>
+            </div>
+            <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur.</p>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <h1 class="mb-0">F</h1>
+              <small class="small font-weight-bold">2 Sep</small>
+            </div>
+            <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur.</p>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <h1 class="mb-0">G</h1>
+              <small class="small font-weight-bold">30 Aug</small>
+            </div>
+            <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur.</p>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <h1 class="mb-0">H</h1>
+              <small class="small font-weight-bold">21 Aug</small>
+            </div>
+            <p class="font-italic text-muted mb-0 text-small">Lorem ipsum dolor sit amet, consectetur.</p>
+          </a>
         </div>
       </div>
+      <div class="col-1"></div>
+
       <div class="container col-6" id="chatContainer">
         <div class="container" id="messageHistory">
           <div class="container" id="responseMsg">
@@ -80,8 +158,6 @@
           </div>
         </div>
       </div>
-
-      <div class="col-1"></div>
     </div>
     <div class="row">
       <div class="col-1"></div>
