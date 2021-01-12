@@ -51,17 +51,13 @@ p {
   font-size: 2em;
   /* display: flex;
   justify-content: center; */
-  color: #4c4c4c;
+  color: #a17e8d;
 }
 
 .main-bg {
   background-image: url('../assets/bkg2.png');
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.touch-cursor {
-  cursor: url('../assets/touch-cursor.png'), auto;
 }
 
 .main-heading {
@@ -84,28 +80,6 @@ p {
   text-align: left;
 }
 
-#landingJumbo {
-  width: 50vw;
-  margin: 10px auto;
-  background-color: #ffffff;
-  padding: 40px !important;
-  justify-content: center;
-  align-content: center;
-  color: #a17e8d;
-  font-size: 2em;
-  border-radius: 25px;
-}
-
-#logo {
-  width: 20%;
-}
-#jumboCont {
-  position: relative;
-}
-#jumboCont img {
-  float: left;
-}
-
 .white-bg {
   margin-left: auto;
   margin-right: auto;
@@ -117,9 +91,10 @@ p {
   height: 450px;
 }
 
-/* // Small devices (landscape phones, 576px and up) */
-@media screen and (max-width: 600px) {
+/* // Small devices (landscape phones, 500px and up) */
+@media screen and (max-width: 500px) {
   .white-bg {
+    padding-bottom: 20px;
     margin: 20px;
     width: auto;
     height: auto;
@@ -190,6 +165,41 @@ p {
   border: 0px;
 } */
 
+.btn-drop {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px;
+  width: auto;
+  background-color: #91b0c6;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 0.5em;
+}
+.btn-drop {
+  background-color: #91b0c6;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-drop {
+    font-size: 10px;
+  }
+}
+
+.btn-add {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px;
+  width: auto;
+  background-color: #7ea292;
+  color: white;
+  border: 10px;
+  font-size: 0.5em;
+}
+.btn-add {
+  background-color: #7ea292c5;
+}
+
 .green-btn {
   margin-top: 15px;
   margin-left: auto;
@@ -235,18 +245,20 @@ p {
   height: auto;
 }
 
-/* // Small devices (landscape phones, 576px and up) */
-@media screen and (max-width: 600px) {
+/* // Small devices (landscape phones, 500px and up) */
+@media screen and (max-width: 500px) {
   .settings-bg {
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     width: 250px;
     height: auto;
-    justify-content: center;
   }
 }
 
 .bi-arrow-bar-right {
-  fill: #e45b32;
+  fill: #ce4319;
 }
 
 .settings-h {
@@ -254,6 +266,16 @@ p {
   font-size: 2.5em;
   color: #e45b32 !important;
   text-align: center;
+}
+
+/* // Small devices (landscape phones, 500px and up) */
+@media screen and (max-width: 500px) {
+  .settings-h {
+    margin: 40px;
+    margin-top: 50px;
+    padding-top: 20px;
+    font-size: 1.2em;
+  }
 }
 
 .btn-font {
@@ -269,30 +291,9 @@ p {
   font-size: 0.8em;
 }
 
-/* // END OF ETHAN CSS // */
-
-.btn-sendMes {
-  padding: 5px;
-  width: 100px;
-  background-color: #7ea292;
-  color: white;
-  border: 0px;
-  border-radius: 10px;
-  font-size: 1em;
-}
-.btn-sendMes:hover {
-  background-color: #7ea292c5;
-  cursor: grab;
-}
-
 .nhs-btn:hover {
   background-color: rgb(126, 162, 146, 0.8);
   text-decoration: none;
-}
-
-.btn-secondary {
-  height: 35px;
-  margin-top: 10px;
 }
 
 .required {
@@ -311,18 +312,77 @@ p {
   width: 500px;
 }
 
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 600px) {
+  .calendar-bg {
+    width: 250px;
+    height: auto;
+    justify-content: center;
+  }
+  .calendar-bg p {
+    padding-top: 10px;
+    font-size: 15px;
+    padding: 0px;
+    width: 180px;
+  }
+
+  .calendar-bg h1 {
+    padding-bottom: 10px;
+    display: inline;
+    width: 150px;
+    font-size: 25px;
+    padding: 0px;
+  }
+
+  .btn-add {
+    font-size: 1.5em;
+  }
+}
+
 .calendar {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   padding-top: 15px;
-  height: 658px;
+  height: auto;
   width: 750px;
   background-color: #a17e8d;
   border-radius: 20px;
   font-size: 1em;
   font-family: 'Oxygen', sans-serif !important;
+  color: white;
+}
+
+/* // Small devices (max 500px) */
+@media screen and (max-width: 500px) {
+  .calendar {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+  }
+  .fc td {
+    height: fit-content;
+  }
+
+  .btn-info {
+    font-size: 10px;
+    display: inline;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  background-color: #6a83949d;
+  color: white !important;
+}
+
+.dropdown-menu:hover {
+  background-color: #6a83949d;
+}
+
+.dropdown-item {
   color: white;
 }
 
@@ -345,6 +405,57 @@ p {
 
 .fc-unthemed td.fc-today {
   border: oldlace;
+}
+
+/* // Small devices (landscape phones, 500x and up) */
+@media screen and (max-width: 500px) {
+  .bi-gear {
+    width: 50px;
+    height: auto;
+    justify-content: center !important;
+  }
+
+  .error-text {
+    font-size: smaller;
+  }
+}
+
+/* // END OF ETHAN CSS // */
+
+#landingJumbo {
+  width: 50vw;
+  margin: 10px auto;
+  background-color: #ffffff;
+  padding: 40px !important;
+  justify-content: center;
+  align-content: center;
+  color: #a17e8d;
+  font-size: 2em;
+  border-radius: 25px;
+}
+
+#logo {
+  width: 20%;
+}
+#jumboCont {
+  position: relative;
+}
+#jumboCont img {
+  float: left;
+}
+
+.btn-sendMes {
+  padding: 5px;
+  width: 100px;
+  background-color: #7ea292;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 1em;
+}
+.btn-sendMes:hover {
+  background-color: #7ea292c5;
+  cursor: grab;
 }
 
 .date-title {
@@ -591,24 +702,35 @@ img {
   }
 }
 
+.card-header {
+  background-color: rgba(126, 161, 144, 0.8);
+  color: white;
+}
+
+.card-body {
+  background-color: rgba(126, 161, 144, 0.8);
+  color: white;
+}
+
+.btn-link {
+  color: white;
+}
+
 #faqContainer {
-  /* padding: 10px; */
-  /* background: #000; */
-  background: rgba(126, 161, 144, 0.8);
-  /* border-radius: 5px; correct */
+  background-color: rgba(126, 161, 144, 0.8);
   color: white;
   font-family: 'Oxygen', sans-serif;
   height: 600px;
   padding-left: 0px;
   padding-right: 0px;
-  overflow-y: scroll;
+
   /* max-width: 75ch; */
   border-radius: 20px;
 }
 
 #faqContainer p {
   /* max-width: 50ch; */
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Quicksand', sans-serif;
   padding-top: 15px;
 }
