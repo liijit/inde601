@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": "true",
   "description": "",
-  "main": "ts-pile/app.js",
+  "main": "build/app.js",
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -57,6 +57,8 @@
     "prettier-html": "cd frontend && prettier --find-config-path -w *.html",
     "prettier-html:hook": "cd frontend && prettier --find-config-path -w",
     "dev": "node_modules/.bin/ts-node-dev --respawn --notify false --prefer-ts --watch src --ignore-watch node_modules -- src/app.ts",
+    "build": "tsc",
+    "start": "node build/app.js",
     "html": "browser-sync start -s --startPath '/frontend' --directory --files \"**/*\""
   },
   "optionalDependencies": {
